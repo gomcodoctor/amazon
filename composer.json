@@ -1,0 +1,24 @@
+{
+  "name": "gomcodoctor/amazon",
+  "type": "library",
+  "description": "All Amazon PHP Libraries",
+  "authors": [
+    {
+      "name": "gomcodoctor",
+      "email": "info@freeopd.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Gomcodoctor\\Amazon\\": ""
+    }
+  },
+  "repositories" : [{
+  }],
+  "extra" : {
+    "branch-alias" : {
+      "dev-master" : "1.0.0-dev"
+    }
+  }
+
+}
