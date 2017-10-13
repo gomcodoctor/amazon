@@ -37,8 +37,6 @@ class MarketplaceWebService_Exception extends Exception
     private $requestId = null;
     /** @var string */
     private $xml = null;
-
-    private $responseHeaderMetadata = null;
    
 
     /**
@@ -68,7 +66,6 @@ class MarketplaceWebService_Exception extends Exception
                 $this->errorType = $exception->getErrorType();
                 $this->requestId = $exception->getRequestId();
                 $this->xml= $exception->getXML();
-                $this->responseHeaderMetadata = $exception->getResponseHeaderMetadata();
             } 
         } else {
             if(isset($errorInfo["StatusCode"])) $this->statusCode = $errorInfo["StatusCode"];
@@ -76,7 +73,6 @@ class MarketplaceWebService_Exception extends Exception
             if(isset($errorInfo["ErrorType"])) $this->errorType = $errorInfo["ErrorType"];
             if(isset($errorInfo["RequestId"])) $this->requestId = $errorInfo["RequestId"];
             if(isset($errorInfo["XML"])) $this->xml= $errorInfo["XML"];
-            if(isset($errorInfo["ResponseHeaderMetadata"])) $this->xml= $errorInfo["ResponseHeaderMetadata"];
         }
     }
 
@@ -136,9 +132,5 @@ class MarketplaceWebService_Exception extends Exception
      */
     public function getRequestId() {
         return $this->requestId;
-    }
-
-    public function getResponseHeaderMetadata() {
-        return $this->responseHeaderMetadata;
     }
 }

@@ -19,7 +19,7 @@
 /**
  *  @see MarketplaceWebService_Model
  */
-require_once ('MarketplaceWebService/Model.php');  
+//require_once ('../Model.php');
 
     
 
@@ -33,7 +33,7 @@ require_once ('MarketplaceWebService/Model.php');
  * <li>Merchant: string</li>
  * <li>ReportType: string</li>
  * <li>Schedule: string</li>
- * <li>ScheduleDate: string</li>
+ * <li>ScheduledDate: string</li>
  *
  * </ul>
  */ 
@@ -53,7 +53,7 @@ class MarketplaceWebService_Model_ManageReportScheduleRequest extends Marketplac
      * <li>Merchant: string</li>
      * <li>ReportType: string</li>
      * <li>Schedule: string</li>
-     * <li>ScheduleDate: string</li>
+     * <li>ScheduledDate: string</li>
      *
      * </ul>
      */
@@ -62,10 +62,9 @@ class MarketplaceWebService_Model_ManageReportScheduleRequest extends Marketplac
         $this->fields = array (
         'Marketplace' => array('FieldValue' => null, 'FieldType' => 'string'),
         'Merchant' => array('FieldValue' => null, 'FieldType' => 'string'),
-        'MWSAuthToken' => array('FieldValue' => null, 'FieldType' => 'string'),
         'ReportType' => array('FieldValue' => null, 'FieldType' => 'string'),
         'Schedule' => array('FieldValue' => null, 'FieldType' => 'string'),
-        'ScheduleDate' => array('FieldValue' => null, 'FieldType' => 'DateTime'),
+        'ScheduledDate' => array('FieldValue' => null, 'FieldType' => 'DateTime'),
         );
         parent::__construct($data);
     }
@@ -161,51 +160,6 @@ class MarketplaceWebService_Model_ManageReportScheduleRequest extends Marketplac
     }
 
     /**
-     * Gets the value of the MWSAuthToken property.
-     *
-     * @return string MWSAuthToken
-     */
-    public function getMWSAuthToken()
-    {
-        return $this->fields['MWSAuthToken']['FieldValue'];
-    }
-
-    /**
-     * Sets the value of the MWSAuthToken property.
-     *
-     * @param string MWSAuthToken
-     * @return this instance
-     */
-    public function setMWSAuthToken($value)
-    {
-        $this->fields['MWSAuthToken']['FieldValue'] = $value;
-        return $this;
-    }
-
-    /**
-     * Sets the value of the MWSAuthToken and returns this instance
-     *
-     * @param string $value MWSAuthToken
-     * @return MarketplaceWebService_Model_ManageReportScheduleRequest instance
-     */
-    public function withMWSAuthToken($value)
-    {
-        $this->setMWSAuthToken($value);
-        return $this;
-    }
-
-
-    /**
-     * Checks if MWSAuthToken is set
-     *
-     * @return bool true if MWSAuthToken  is set
-     */
-    public function isSetMWSAuthToken()
-    {
-        return !is_null($this->fields['MWSAuthToken']['FieldValue']);
-    }
-
-    /**
      * Gets the value of the ReportType property.
      * 
      * @return string ReportType
@@ -296,48 +250,48 @@ class MarketplaceWebService_Model_ManageReportScheduleRequest extends Marketplac
     }
 
     /**
-     * Gets the value of the ScheduleDate property.
+     * Gets the value of the ScheduledDate property.
      * 
-     * @return string ScheduleDate
+     * @return string ScheduledDate
      */
-    public function getScheduleDate() 
+    public function getScheduledDate() 
     {
-        return $this->fields['ScheduleDate']['FieldValue'];
+        return $this->fields['ScheduledDate']['FieldValue'];
     }
 
     /**
-     * Sets the value of the ScheduleDate property.
+     * Sets the value of the ScheduledDate property.
      * 
-     * @param string ScheduleDate
+     * @param string ScheduledDate
      * @return this instance
      */
-    public function setScheduleDate($value) 
+    public function setScheduledDate($value) 
     {
-        $this->fields['ScheduleDate']['FieldValue'] = $value;
+        $this->fields['ScheduledDate']['FieldValue'] = $value;
         return $this;
     }
 
     /**
-     * Sets the value of the ScheduleDate and returns this instance
+     * Sets the value of the ScheduledDate and returns this instance
      * 
-     * @param string $value ScheduleDate
+     * @param string $value ScheduledDate
      * @return MarketplaceWebService_Model_ManageReportScheduleRequest instance
      */
-    public function withScheduleDate($value)
+    public function withScheduledDate($value)
     {
-        $this->setScheduleDate($value);
+        $this->setScheduledDate($value);
         return $this;
     }
 
 
     /**
-     * Checks if ScheduleDate is set
+     * Checks if ScheduledDate is set
      * 
-     * @return bool true if ScheduleDate  is set
+     * @return bool true if ScheduledDate  is set
      */
-    public function isSetScheduleDate()
+    public function isSetScheduledDate()
     {
-        return !is_null($this->fields['ScheduleDate']['FieldValue']);
+        return !is_null($this->fields['ScheduledDate']['FieldValue']);
     }
 
 

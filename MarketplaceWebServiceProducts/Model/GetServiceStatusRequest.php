@@ -1,6 +1,6 @@
 <?php
 /*******************************************************************************
- * Copyright 2009-2014 Amazon Services. All Rights Reserved.
+ * Copyright 2009-2013 Amazon Services. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License"); 
  *
  * You may not use this file except in compliance with the License. 
@@ -13,8 +13,8 @@
  * @category Amazon
  * @package  Marketplace Web Service Products
  * @version  2011-10-01
- * Library Version: 2014-10-20
- * Generated: Fri Oct 17 17:59:56 GMT 2014
+ * Library Version: 2013-11-01
+ * Generated: Fri Nov 08 21:23:22 GMT 2013
  */
 
 /**
@@ -31,7 +31,6 @@ require_once (dirname(__FILE__) . '/../Model.php');
  * <ul>
  * 
  * <li>SellerId: string</li>
- * <li>MWSAuthToken: string</li>
  *
  * </ul>
  */
@@ -41,8 +40,7 @@ require_once (dirname(__FILE__) . '/../Model.php');
     public function __construct($data = null)
     {
     $this->_fields = array (
-    'SellerId' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'MWSAuthToken' => array('FieldValue' => null, 'FieldType' => 'string'),
+'SellerId' => array('FieldValue' => null, 'FieldType' => 'string'),
     );
     parent::__construct($data);
     }
@@ -90,52 +88,6 @@ require_once (dirname(__FILE__) . '/../Model.php');
     public function withSellerId($value)
     {
         $this->setSellerId($value);
-        return $this;
-    }
-
-    /**
-     * Get the value of the MWSAuthToken property.
-     *
-     * @return String MWSAuthToken.
-     */
-    public function getMWSAuthToken()
-    {
-        return $this->_fields['MWSAuthToken']['FieldValue'];
-    }
-
-    /**
-     * Set the value of the MWSAuthToken property.
-     *
-     * @param string mwsAuthToken
-     * @return this instance
-     */
-    public function setMWSAuthToken($value)
-    {
-        $this->_fields['MWSAuthToken']['FieldValue'] = $value;
-        return $this;
-    }
-
-    /**
-     * Check to see if MWSAuthToken is set.
-     *
-     * @return true if MWSAuthToken is set.
-     */
-    public function isSetMWSAuthToken()
-    {
-                return !is_null($this->_fields['MWSAuthToken']['FieldValue']);
-            }
-
-    /**
-     * Set the value of MWSAuthToken, return this.
-     *
-     * @param mwsAuthToken
-     *             The new value to set.
-     *
-     * @return This instance.
-     */
-    public function withMWSAuthToken($value)
-    {
-        $this->setMWSAuthToken($value);
         return $this;
     }
 

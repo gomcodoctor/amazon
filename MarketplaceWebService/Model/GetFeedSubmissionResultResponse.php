@@ -19,7 +19,7 @@
 /**
  *  @see MarketplaceWebService_Model
  */
-require_once ('MarketplaceWebService/Model.php');  
+//require_once ('../Model.php');
 
     
 
@@ -69,7 +69,8 @@ class MarketplaceWebService_Model_GetFeedSubmissionResultResponse extends Market
      */
     public static function fromXML($xml)
     {
-        $dom = new DOMDocument();
+        echo $xml;
+		$dom = new DOMDocument();
         $dom->loadXML($xml);
         $xpath = new DOMXPath($dom);
     	$xpath->registerNamespace('a', 'http://mws.amazonaws.com/doc/2009-01-01/');
@@ -191,13 +192,4 @@ class MarketplaceWebService_Model_GetFeedSubmissionResultResponse extends Market
         return $xml;
     }
 
-    private $_responseHeaderMetadata = null;
-
-    public function getResponseHeaderMetadata() {
-      return $this->_responseHeaderMetadata;
-    }
-
-    public function setResponseHeaderMetadata($responseHeaderMetadata) {
-      return $this->_responseHeaderMetadata = $responseHeaderMetadata;
-    }
 }

@@ -1,6 +1,6 @@
 <?php
 /*******************************************************************************
- * Copyright 2009-2014 Amazon Services. All Rights Reserved.
+ * Copyright 2009-2013 Amazon Services. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License"); 
  *
  * You may not use this file except in compliance with the License. 
@@ -13,8 +13,8 @@
  * @category Amazon
  * @package  Marketplace Web Service Products
  * @version  2011-10-01
- * Library Version: 2014-10-20
- * Generated: Fri Oct 17 17:59:56 GMT 2014
+ * Library Version: 2013-11-01
+ * Generated: Fri Nov 08 21:23:22 GMT 2013
  */
 
 /**
@@ -43,10 +43,10 @@ require_once (dirname(__FILE__) . '/../Model.php');
     public function __construct($data = null)
     {
     $this->_fields = array (
-    'Type' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Code' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Message' => array('FieldValue' => null, 'FieldType' => 'string'),
-    'Detail' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_ErrorDetail'),
+'Type' => array('FieldValue' => null, 'FieldType' => 'string'),
+'Code' => array('FieldValue' => null, 'FieldType' => 'string'),
+'Message' => array('FieldValue' => null, 'FieldType' => 'string'),
+'Detail' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_ErrorDetail'),
     );
     parent::__construct($data);
     }
