@@ -19,6 +19,8 @@
 /**
  *  @see MarketplaceWebService_Model
  */
+//require_once ('MarketplaceWebService/Model.php'); 
+//require_once ('MarketplaceWebService/Model/ContentType.php');
     
 
 /**
@@ -29,6 +31,7 @@
  * 
  * <li>Marketplace: string</li>
  * <li>Merchant: string</li>
+ * <li>MarketplaceIdList: MarketplaceWebService_Model_IdList</li>
  * <li>FeedContent: string</li>
  * <li>FeedType: string</li>
  * <li>PurgeAndReplace: bool</li>
@@ -49,6 +52,7 @@ class MarketplaceWebService_Model_SubmitFeedRequest extends MarketplaceWebServic
      * 
      * <li>Marketplace: string</li>
      * <li>Merchant: string</li>
+     * <li>MarketplaceIdList: MarketplaceWebService_Model_IdList</li>
      * <li>FeedContent: string</li>
      * <li>FeedType: string</li>
      * <li>PurgeAndReplace: bool</li>
@@ -66,15 +70,17 @@ class MarketplaceWebService_Model_SubmitFeedRequest extends MarketplaceWebServic
         // Here we're setting the content-type field directly to the object, but beware the actual 
         // method of construction from associative arrays from the client interface would do something like:
         // $parameters = array ('ContentType' => array('ContentType' => 'application/octet-stream'));
-    		
+
         $this->fields = array (
         'Marketplace' => array('FieldValue' => null, 'FieldType' => 'string'),
         'Merchant' => array('FieldValue' => null, 'FieldType' => 'string'),
+        'MWSAuthToken' => array('FieldValue' => null, 'FieldType' => 'string'),
+        'MarketplaceIdList' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebService_Model_IdList'),
         'FeedContent' => array ('FieldValue' => null, 'FieldType' => 'string'),
         'FeedType' => array('FieldValue' => null, 'FieldType' => 'string'),
         'PurgeAndReplace' => array('FieldValue' => null, 'FieldType' => 'bool'),
         'ContentMd5' => array ('FieldValue' => null, 'FieldType' => 'string'),
- 		'ContentType' => array ('FieldValue' => self::$DEFAULT_CONTENT_TYPE, 'FieldType' => 'MarketplaceWebService_Model_ContentType')      
+ 	'ContentType' => array ('FieldValue' => self::$DEFAULT_CONTENT_TYPE, 'FieldType' => 'MarketplaceWebService_Model_ContentType')      
         );
         
         parent::__construct($data);
@@ -202,6 +208,99 @@ class MarketplaceWebService_Model_SubmitFeedRequest extends MarketplaceWebServic
     public function isSetMerchant()
     {
         return !is_null($this->fields['Merchant']['FieldValue']);
+    }
+
+    /**
+     * Gets the value of the MWSAuthToken property.
+     *
+     * @return string MWSAuthToken
+     */
+    public function getMWSAuthToken()
+    {
+        return $this->fields['MWSAuthToken']['FieldValue'];
+    }
+
+    /**
+     * Sets the value of the MWSAuthToken property.
+     *
+     * @param string MWSAuthToken
+     * @return this instance
+     */
+    public function setMWSAuthToken($value)
+    {
+        $this->fields['MWSAuthToken']['FieldValue'] = $value;
+        return $this;
+    }
+
+    /**
+     * Sets the value of the MWSAuthToken and returns this instance
+     *
+     * @param string $value MWSAuthToken
+     * @return MarketplaceWebService_Model_SubmitFeedRequest instance
+     */
+    public function withMWSAuthToken($value)
+    {
+        $this->setMWSAuthToken($value);
+        return $this;
+    }
+
+
+    /**
+     * Checks if MWSAuthToken is set
+     *
+     * @return bool true if MWSAuthToken  is set
+     */
+    public function isSetMWSAuthToken()
+    {
+        return !is_null($this->fields['MWSAuthToken']['FieldValue']);
+    }
+
+    /**
+     * Gets the value of the MarketplaceIdList.
+     * 
+     * @return IdList MarketplaceIdList
+     */
+    public function getMarketplaceIdList() 
+    {
+        return $this->fields['MarketplaceIdList']['FieldValue'];
+    }
+
+    /**
+     * Sets the value of the MarketplaceIdList.
+     * 
+     * @param IdList MarketplaceIdList
+     * @return void
+     */
+    public function setMarketplaceIdList($value) 
+    {
+	$marketplaceIdList = new MarketplaceWebService_Model_IdList();
+	$marketplaceIdList->setId($value['Id']);
+        $this->fields['MarketplaceIdList']['FieldValue'] = $marketplaceIdList;
+        return;
+    }
+
+    /**
+     * Sets the value of the MarketplaceIdList  and returns this instance
+     * 
+     * @param IdList $value MarketplaceIdList
+     * @return MarketplaceWebService_Model_SubmitFeedRequest instance
+     */
+    public function withMarketplaceIdList($value)
+    {
+        $this->setMarketplaceIdList($value);
+        return $this;
+    }
+
+
+    /**
+     * Checks if MarketplaceIdList  is set
+     * 
+     * @return bool true if MarketplaceIdList property is set
+     */
+    public function isSetMarketplaceIdList()
+    {
+        return !is_null($this->fields['MarketplaceIdList']['FieldValue']);
+
     }
 
     /**

@@ -20,7 +20,7 @@
 /**
  *  @see MarketplaceWebServiceOrders_Interface
  */
-require_once (dirname(__FILE__) . '/Interface.php');
+//require_once (dirname(__FILE__) . '/Interface.php');
 
 /**
  * MarketplaceWebServiceOrders_Client is an implementation of MarketplaceWebServiceOrders
@@ -65,14 +65,14 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
     public function getOrder($request)
     {
         if (!($request instanceof MarketplaceWebServiceOrders_Model_GetOrderRequest)) {
-            require_once (dirname(__FILE__) . '/Model/GetOrderRequest.php');
+            //require_once (dirname(__FILE__) . '/Model/GetOrderRequest.php');
             $request = new MarketplaceWebServiceOrders_Model_GetOrderRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'GetOrder';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/GetOrderResponse.php');
+        //require_once (dirname(__FILE__) . '/Model/GetOrderResponse.php');
         $response = MarketplaceWebServiceOrders_Model_GetOrderResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -114,14 +114,14 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
     public function getServiceStatus($request)
     {
         if (!($request instanceof MarketplaceWebServiceOrders_Model_GetServiceStatusRequest)) {
-            require_once (dirname(__FILE__) . '/Model/GetServiceStatusRequest.php');
+            //require_once (dirname(__FILE__) . '/Model/GetServiceStatusRequest.php');
             $request = new MarketplaceWebServiceOrders_Model_GetServiceStatusRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'GetServiceStatus';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/GetServiceStatusResponse.php');
+        //require_once (dirname(__FILE__) . '/Model/GetServiceStatusResponse.php');
         $response = MarketplaceWebServiceOrders_Model_GetServiceStatusResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -160,14 +160,14 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
     public function listOrderItems($request)
     {
         if (!($request instanceof MarketplaceWebServiceOrders_Model_ListOrderItemsRequest)) {
-            require_once (dirname(__FILE__) . '/Model/ListOrderItemsRequest.php');
+            //require_once (dirname(__FILE__) . '/Model/ListOrderItemsRequest.php');
             $request = new MarketplaceWebServiceOrders_Model_ListOrderItemsRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'ListOrderItems';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/ListOrderItemsResponse.php');
+        //require_once (dirname(__FILE__) . '/Model/ListOrderItemsResponse.php');
         $response = MarketplaceWebServiceOrders_Model_ListOrderItemsResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -210,14 +210,14 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
     public function listOrderItemsByNextToken($request)
     {
         if (!($request instanceof MarketplaceWebServiceOrders_Model_ListOrderItemsByNextTokenRequest)) {
-            require_once (dirname(__FILE__) . '/Model/ListOrderItemsByNextTokenRequest.php');
+            //require_once (dirname(__FILE__) . '/Model/ListOrderItemsByNextTokenRequest.php');
             $request = new MarketplaceWebServiceOrders_Model_ListOrderItemsByNextTokenRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'ListOrderItemsByNextToken';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/ListOrderItemsByNextTokenResponse.php');
+        //require_once (dirname(__FILE__) . '/Model/ListOrderItemsByNextTokenResponse.php');
         $response = MarketplaceWebServiceOrders_Model_ListOrderItemsByNextTokenResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -258,14 +258,14 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
     public function listOrders($request)
     {
         if (!($request instanceof MarketplaceWebServiceOrders_Model_ListOrdersRequest)) {
-            require_once (dirname(__FILE__) . '/Model/ListOrdersRequest.php');
+            //require_once (dirname(__FILE__) . '/Model/ListOrdersRequest.php');
             $request = new MarketplaceWebServiceOrders_Model_ListOrdersRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'ListOrders';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/ListOrdersResponse.php');
+        //require_once (dirname(__FILE__) . '/Model/ListOrdersResponse.php');
         $response = MarketplaceWebServiceOrders_Model_ListOrdersResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -341,14 +341,14 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
     public function listOrdersByNextToken($request)
     {
         if (!($request instanceof MarketplaceWebServiceOrders_Model_ListOrdersByNextTokenRequest)) {
-            require_once (dirname(__FILE__) . '/Model/ListOrdersByNextTokenRequest.php');
+            //require_once (dirname(__FILE__) . '/Model/ListOrdersByNextTokenRequest.php');
             $request = new MarketplaceWebServiceOrders_Model_ListOrdersByNextTokenRequest($request);
         }
         $parameters = $request->toQueryParameterArray();
         $parameters['Action'] = 'ListOrdersByNextToken';
         $httpResponse = $this->_invoke($parameters);
 
-        require_once (dirname(__FILE__) . '/Model/ListOrdersByNextTokenResponse.php');
+        //require_once (dirname(__FILE__) . '/Model/ListOrdersByNextTokenResponse.php');
         $response = MarketplaceWebServiceOrders_Model_ListOrdersByNextTokenResponse::fromXML($httpResponse['ResponseBody']);
         $response->setResponseHeaderMetadata($httpResponse['ResponseHeaderMetadata']);
         return $response;
@@ -535,7 +535,7 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
     {
         try {
             if (empty($this->_config['ServiceURL'])) {
-                require_once (dirname(__FILE__) . '/Exception.php');
+                //require_once (dirname(__FILE__) . '/Exception.php');
                 throw new MarketplaceWebServiceOrders_Exception(
                     array ('ErrorCode' => 'InvalidServiceURL',
                            'Message' => "Missing serviceUrl configuration value. You may obtain a list of valid MWS URLs by consulting the MWS Developer's Guide, or reviewing the sample code published along side this library."));
@@ -558,7 +558,7 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
         } catch (MarketplaceWebServiceOrders_Exception $se) {
             throw $se;
         } catch (Exception $t) {
-            require_once (dirname(__FILE__) . '/Exception.php');
+            //require_once (dirname(__FILE__) . '/Exception.php');
             throw new MarketplaceWebServiceOrders_Exception(array('Exception' => $t, 'Message' => $t->getMessage()));
         }
     }
@@ -585,7 +585,7 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
             $exProps["Message"] = "Internal Error";
         }
 
-        require_once (dirname(__FILE__) . '/Exception.php');
+        //require_once (dirname(__FILE__) . '/Exception.php');
         return new MarketplaceWebServiceOrders_Exception($exProps);
     }
 
@@ -650,7 +650,7 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
         $response = curl_exec($ch);
 
         if($response === false) {
-            require_once (dirname(__FILE__) . '/Exception.php');
+            //require_once (dirname(__FILE__) . '/Exception.php');
             $exProps["Message"] = curl_error($ch);
             $exProps["ErrorType"] = "HTTP";
             curl_close($ch);
@@ -702,7 +702,7 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
         
         //If the body is null here then we were unable to parse the response and will throw an exception
         if($body == null){
-            require_once (dirname(__FILE__) . '/Exception.php');
+            //require_once (dirname(__FILE__) . '/Exception.php');
             $exProps["Message"] = "Failed to parse valid HTTP response (" . $response . ")";
             $exProps["ErrorType"] = "HTTP";
             throw new MarketplaceWebServiceOrders_Exception($exProps);
@@ -766,7 +766,7 @@ class MarketplaceWebServiceOrders_Client implements MarketplaceWebServiceOrders_
             }
         }
  
-        require_once(dirname(__FILE__) . '/Model/ResponseHeaderMetadata.php');
+        //require_once(dirname(__FILE__) . '/Model/ResponseHeaderMetadata.php');
         return new MarketplaceWebServiceOrders_Model_ResponseHeaderMetadata(
           $headers['x-mws-request-id'],
           $headers['x-mws-response-context'],

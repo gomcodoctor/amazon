@@ -19,7 +19,7 @@
 /**
  *  @see MarketplaceWebService_Model
  */
-//require_once ('../Model.php');
+//require_once ('MarketplaceWebService/Model.php');  
 
     
 
@@ -31,9 +31,11 @@
  * 
  * <li>Marketplace: string</li>
  * <li>Merchant: string</li>
+ * <li>MarketplaceIdList: MarketplaceWebService_Model_IdList</li>
  * <li>ReportType: string</li>
  * <li>StartDate: string</li>
  * <li>EndDate: string</li>
+ * <li>ReportOptions: string</li>
  *
  * </ul>
  */ 
@@ -51,9 +53,11 @@ class MarketplaceWebService_Model_RequestReportRequest extends MarketplaceWebSer
      * 
      * <li>Marketplace: string</li>
      * <li>Merchant: string</li>
+     * <li>MarketplaceIdList: MarketplaceWebService_Model_IdList</li>
      * <li>ReportType: string</li>
      * <li>StartDate: string</li>
      * <li>EndDate: string</li>
+     * <li>ReportOptions: string</li>
      *
      * </ul>
      */
@@ -62,9 +66,12 @@ class MarketplaceWebService_Model_RequestReportRequest extends MarketplaceWebSer
         $this->fields = array (
         'Marketplace' => array('FieldValue' => null, 'FieldType' => 'string'),
         'Merchant' => array('FieldValue' => null, 'FieldType' => 'string'),
+        'MWSAuthToken' => array('FieldValue' => null, 'FieldType' => 'string'),
+        'MarketplaceIdList' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebService_Model_IdList'),
         'ReportType' => array('FieldValue' => null, 'FieldType' => 'string'),
         'StartDate' => array('FieldValue' => null, 'FieldType' => 'DateTime'),
         'EndDate' => array('FieldValue' => null, 'FieldType' => 'DateTime'),
+        'ReportOptions' => array('FieldValue' => null, 'FieldType' => 'string'),
         );
         parent::__construct($data);
     }
@@ -157,6 +164,99 @@ class MarketplaceWebService_Model_RequestReportRequest extends MarketplaceWebSer
     public function isSetMerchant()
     {
         return !is_null($this->fields['Merchant']['FieldValue']);
+    }
+
+    /**
+     * Gets the value of the MWSAuthToken property.
+     *
+     * @return string MWSAuthToken
+     */
+    public function getMWSAuthToken()
+    {
+        return $this->fields['MWSAuthToken']['FieldValue'];
+    }
+
+    /**
+     * Sets the value of the MWSAuthToken property.
+     *
+     * @param string MWSAuthToken
+     * @return this instance
+     */
+    public function setMWSAuthToken($value)
+    {
+        $this->fields['MWSAuthToken']['FieldValue'] = $value;
+        return $this;
+    }
+
+    /**
+     * Sets the value of the MWSAuthToken and returns this instance
+     *
+     * @param string $value MWSAuthToken
+     * @return MarketplaceWebService_Model_RequestReportRequest instance
+     */
+    public function withMWSAuthToken($value)
+    {
+        $this->setMWSAuthToken($value);
+        return $this;
+    }
+
+
+    /**
+     * Checks if MWSAuthToken is set
+     *
+     * @return bool true if MWSAuthToken  is set
+     */
+    public function isSetMWSAuthToken()
+    {
+        return !is_null($this->fields['MWSAuthToken']['FieldValue']);
+    }
+
+    /**
+     * Gets the value of the MarketplaceIdList.
+     * 
+     * @return IdList MarketplaceIdList
+     */
+    public function getMarketplaceIdList() 
+    {
+        return $this->fields['MarketplaceIdList']['FieldValue'];
+    }
+
+    /**
+     * Sets the value of the MarketplaceIdList.
+     * 
+     * @param IdList MarketplaceIdList
+     * @return void
+     */
+    public function setMarketplaceIdList($value) 
+    {
+	$marketplaceIdList = new MarketplaceWebService_Model_IdList();
+	$marketplaceIdList->setId($value['Id']);
+        $this->fields['MarketplaceIdList']['FieldValue'] = $marketplaceIdList;
+        return;
+    }
+
+    /**
+     * Sets the value of the MarketplaceIdList  and returns this instance
+     * 
+     * @param IdList $value MarketplaceIdList
+     * @return MarketplaceWebService_Model_RequestReportRequest instance
+     */
+    public function withMarketplaceIdList($value)
+    {
+        $this->setMarketplaceIdList($value);
+        return $this;
+    }
+
+
+    /**
+     * Checks if MarketplaceIdList  is set
+     * 
+     * @return bool true if MarketplaceIdList property is set
+     */
+    public function isSetMarketplaceIdList()
+    {
+        return !is_null($this->fields['MarketplaceIdList']['FieldValue']);
+
     }
 
     /**
@@ -294,7 +394,50 @@ class MarketplaceWebService_Model_RequestReportRequest extends MarketplaceWebSer
         return !is_null($this->fields['EndDate']['FieldValue']);
     }
 
+    /**
+     * Gets the value of the ReportOptions property.
+     * 
+     * @return string ReportOptions
+     */
+    public function getReportOptions() 
+    {
+        return $this->fields['ReportOptions']['FieldValue'];
+    }
 
+    /**
+     * Sets the value of the ReportOptions property.
+     * 
+     * @param string ReportOptions
+     * @return this instance
+     */
+    public function setReportOptions($value) 
+    {
+        $this->fields['ReportOptions']['FieldValue'] = $value;
+        return $this;
+    }
+
+    /**
+     * Sets the value of the ReportOptions and returns this instance
+     * 
+     * @param string $value ReportOptions
+     * @return MarketplaceWebService_Model_RequestReportRequest instance
+     */
+    public function withReportOptions($value)
+    {
+        $this->setReportOptions($value);
+        return $this;
+    }
+
+
+    /**
+     * Checks if ReportOptions is set
+     * 
+     * @return bool true if ReportOptions  is set
+     */
+    public function isSetReportOptions()
+    {
+        return !is_null($this->fields['ReportOptions']['FieldValue']);
+    }
 
 
 }

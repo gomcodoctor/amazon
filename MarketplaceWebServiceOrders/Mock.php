@@ -20,7 +20,7 @@
 /**
  *  @see MarketplaceWebServiceOrders_Interface
  */
-require_once (dirname(__FILE__) . '/Interface.php'); 
+//require_once (dirname(__FILE__) . '/Interface.php'); 
 
 class MarketplaceWebServiceOrders_Mock implements MarketplaceWebServiceOrders_Interface
 {
@@ -38,7 +38,7 @@ class MarketplaceWebServiceOrders_Mock implements MarketplaceWebServiceOrders_In
      */
     public function getOrder($request)
     {
-        require_once (dirname(__FILE__) . '/Model/GetOrderResponse.php');
+        //require_once (dirname(__FILE__) . '/Model/GetOrderResponse.php');
         return MarketplaceWebServiceOrders_Model_GetOrderResponse::fromXML($this->_invoke('GetOrder'));
     }
 
@@ -55,7 +55,7 @@ class MarketplaceWebServiceOrders_Mock implements MarketplaceWebServiceOrders_In
      */
     public function getServiceStatus($request)
     {
-        require_once (dirname(__FILE__) . '/Model/GetServiceStatusResponse.php');
+        //require_once (dirname(__FILE__) . '/Model/GetServiceStatusResponse.php');
         return MarketplaceWebServiceOrders_Model_GetServiceStatusResponse::fromXML($this->_invoke('GetServiceStatus'));
     }
 
@@ -72,7 +72,7 @@ class MarketplaceWebServiceOrders_Mock implements MarketplaceWebServiceOrders_In
      */
     public function listOrderItems($request)
     {
-        require_once (dirname(__FILE__) . '/Model/ListOrderItemsResponse.php');
+        //require_once (dirname(__FILE__) . '/Model/ListOrderItemsResponse.php');
         return MarketplaceWebServiceOrders_Model_ListOrderItemsResponse::fromXML($this->_invoke('ListOrderItems'));
     }
 
@@ -90,7 +90,7 @@ class MarketplaceWebServiceOrders_Mock implements MarketplaceWebServiceOrders_In
      */
     public function listOrderItemsByNextToken($request)
     {
-        require_once (dirname(__FILE__) . '/Model/ListOrderItemsByNextTokenResponse.php');
+        //require_once (dirname(__FILE__) . '/Model/ListOrderItemsByNextTokenResponse.php');
         return MarketplaceWebServiceOrders_Model_ListOrderItemsByNextTokenResponse::fromXML($this->_invoke('ListOrderItemsByNextToken'));
     }
 
@@ -106,7 +106,7 @@ class MarketplaceWebServiceOrders_Mock implements MarketplaceWebServiceOrders_In
      */
     public function listOrders($request)
     {
-        require_once (dirname(__FILE__) . '/Model/ListOrdersResponse.php');
+        //require_once (dirname(__FILE__) . '/Model/ListOrdersResponse.php');
         return MarketplaceWebServiceOrders_Model_ListOrdersResponse::fromXML($this->_invoke('ListOrders'));
     }
 
@@ -124,7 +124,7 @@ class MarketplaceWebServiceOrders_Mock implements MarketplaceWebServiceOrders_In
      */
     public function listOrdersByNextToken($request)
     {
-        require_once (dirname(__FILE__) . '/Model/ListOrdersByNextTokenResponse.php');
+        //require_once (dirname(__FILE__) . '/Model/ListOrdersByNextTokenResponse.php');
         return MarketplaceWebServiceOrders_Model_ListOrdersByNextTokenResponse::fromXML($this->_invoke('ListOrdersByNextToken'));
     }
 
