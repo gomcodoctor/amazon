@@ -19,7 +19,7 @@
 /**
  *  @see MarketplaceWebService_Interface
  */
-//require_once ('MarketplaceWebService/Interface.php'); 
+//require_once ('MarketplaceWebService/Interface.php');
 
 /**
  * The Amazon Marketplace Web Service contain APIs for inventory and order management.
