@@ -33,13 +33,13 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
     const MWS_CLIENT_VERSION = '2014-10-20';
 
     /** @var string */
-    private  $_awsAccessKeyId = null;
+    protected  $_awsAccessKeyId = null;
 
     /** @var string */
-    private  $_awsSecretAccessKey = null;
+    protected  $_awsSecretAccessKey = null;
 
     /** @var array */
-    private  $_config = array ('ServiceURL' => null,
+    protected  $_config = array ('ServiceURL' => null,
                                'UserAgent' => 'MarketplaceWebServiceProducts PHP5 Library',
                                'SignatureVersion' => 2,
                                'SignatureMethod' => 'HmacSHA256',
@@ -83,7 +83,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
     /**
      * Convert GetCompetitivePricingForASINRequest to name value pairs
      */
-    private function _convertGetCompetitivePricingForASIN($request) {
+    protected function _convertGetCompetitivePricingForASIN($request) {
 
         $parameters = array();
         $parameters['Action'] = 'GetCompetitivePricingForASIN';
@@ -138,7 +138,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
     /**
      * Convert GetCompetitivePricingForSKURequest to name value pairs
      */
-    private function _convertGetCompetitivePricingForSKU($request) {
+    protected function _convertGetCompetitivePricingForSKU($request) {
 
         $parameters = array();
         $parameters['Action'] = 'GetCompetitivePricingForSKU';
@@ -193,7 +193,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
     /**
      * Convert GetLowestOfferListingsForASINRequest to name value pairs
      */
-    private function _convertGetLowestOfferListingsForASIN($request) {
+    protected function _convertGetLowestOfferListingsForASIN($request) {
 
         $parameters = array();
         $parameters['Action'] = 'GetLowestOfferListingsForASIN';
@@ -254,7 +254,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
     /**
      * Convert GetLowestOfferListingsForSKURequest to name value pairs
      */
-    private function _convertGetLowestOfferListingsForSKU($request) {
+    protected function _convertGetLowestOfferListingsForSKU($request) {
 
         $parameters = array();
         $parameters['Action'] = 'GetLowestOfferListingsForSKU';
@@ -315,7 +315,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
     /**
      * Convert GetMatchingProductRequest to name value pairs
      */
-    private function _convertGetMatchingProduct($request) {
+    protected function _convertGetMatchingProduct($request) {
 
         $parameters = array();
         $parameters['Action'] = 'GetMatchingProduct';
@@ -370,7 +370,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
     /**
      * Convert GetMatchingProductForIdRequest to name value pairs
      */
-    private function _convertGetMatchingProductForId($request) {
+    protected function _convertGetMatchingProductForId($request) {
 
         $parameters = array();
         $parameters['Action'] = 'GetMatchingProductForId';
@@ -427,7 +427,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
     /**
      * Convert GetMyPriceForASINRequest to name value pairs
      */
-    private function _convertGetMyPriceForASIN($request) {
+    protected function _convertGetMyPriceForASIN($request) {
 
         $parameters = array();
         $parameters['Action'] = 'GetMyPriceForASIN';
@@ -481,7 +481,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
     /**
      * Convert GetMyPriceForSKURequest to name value pairs
      */
-    private function _convertGetMyPriceForSKU($request) {
+    protected function _convertGetMyPriceForSKU($request) {
 
         $parameters = array();
         $parameters['Action'] = 'GetMyPriceForSKU';
@@ -536,7 +536,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
     /**
      * Convert GetProductCategoriesForASINRequest to name value pairs
      */
-    private function _convertGetProductCategoriesForASIN($request) {
+    protected function _convertGetProductCategoriesForASIN($request) {
 
         $parameters = array();
         $parameters['Action'] = 'GetProductCategoriesForASIN';
@@ -588,7 +588,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
     /**
      * Convert GetProductCategoriesForSKURequest to name value pairs
      */
-    private function _convertGetProductCategoriesForSKU($request) {
+    protected function _convertGetProductCategoriesForSKU($request) {
 
         $parameters = array();
         $parameters['Action'] = 'GetProductCategoriesForSKU';
@@ -641,7 +641,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
     /**
      * Convert GetServiceStatusRequest to name value pairs
      */
-    private function _convertGetServiceStatus($request) {
+    protected function _convertGetServiceStatus($request) {
 
         $parameters = array();
         $parameters['Action'] = 'GetServiceStatus';
@@ -687,7 +687,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
     /**
      * Convert ListMatchingProductsRequest to name value pairs
      */
-    private function _convertListMatchingProducts($request) {
+    protected function _convertListMatchingProducts($request) {
 
         $parameters = array();
         $parameters['Action'] = 'ListMatchingProducts';
@@ -743,7 +743,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
         $this->setUserAgentHeader($applicationName, $applicationVersion);
     }
 
-    private function setUserAgentHeader(
+    protected function setUserAgentHeader(
         $applicationName,
         $applicationVersion,
         $attributes = null) {
@@ -756,7 +756,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
             $this->constructUserAgentHeader($applicationName, $applicationVersion, $attributes);
     }
 
-    private function constructUserAgentHeader($applicationName, $applicationVersion, $attributes = null) {
+    protected function constructUserAgentHeader($applicationName, $applicationVersion, $attributes = null) {
         if (is_null($applicationName) || $applicationName === "") {
             throw new InvalidArgumentException('$applicationName cannot be null');
         }
@@ -798,7 +798,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
     * @param $s
     * @return string
     */
-   private function collapseWhitespace($s) {
+   protected function collapseWhitespace($s) {
        return preg_replace('/ {2,}|\s/', ' ', $s);
    }
 
@@ -808,7 +808,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
      * @param $s
      * @return string
      */
-    private function quoteApplicationName($s) {
+    protected function quoteApplicationName($s) {
         $quotedString = $this->collapseWhitespace($s);
         $quotedString = preg_replace('/\\\\/', '\\\\\\\\', $quotedString);
         $quotedString = preg_replace('/\//', '\\/', $quotedString);
@@ -823,7 +823,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
      * @param $s
      * @return string
      */
-    private function quoteApplicationVersion($s) {
+    protected function quoteApplicationVersion($s) {
         $quotedString = $this->collapseWhitespace($s);
         $quotedString = preg_replace('/\\\\/', '\\\\\\\\', $quotedString);
         $quotedString = preg_replace('/\\(/', '\\(', $quotedString);
@@ -838,7 +838,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
      * @param $s
      * @return unknown_type
      */
-    private function quoteAttributeName($s) {
+    protected function quoteAttributeName($s) {
         $quotedString = $this->collapseWhitespace($s);
         $quotedString = preg_replace('/\\\\/', '\\\\\\\\', $quotedString);
         $quotedString = preg_replace('/\\=/', '\\=', $quotedString);
@@ -853,7 +853,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
      * @param $s
      * @return unknown_type
      */
-    private function quoteAttributeValue($s) {
+    protected function quoteAttributeValue($s) {
         $quotedString = $this->collapseWhitespace($s);
         $quotedString = preg_replace('/\\\\/', '\\\\\\\\', $quotedString);
         $quotedString = preg_replace('/\\;/', '\\;', $quotedString);
@@ -868,7 +868,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
     /**
      * Invoke request and return response
      */
-    private function _invoke(array $parameters)
+    protected function _invoke(array $parameters)
     {
         try {
             if (empty($this->_config['ServiceURL'])) {
@@ -903,7 +903,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
     /**
      * Look for additional error strings in the response and return formatted exception
      */
-    private function _reportAnyErrors($responseBody, $status, $responseHeaderMetadata, Exception $e =  null)
+    protected function _reportAnyErrors($responseBody, $status, $responseHeaderMetadata, Exception $e =  null)
     {
         $exProps = array();
         $exProps["StatusCode"] = $status;
@@ -932,7 +932,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
      * Perform HTTP post with exponential retries on error 500 and 503
      *
      */
-    private function _httpPost(array $parameters)
+    protected function _httpPost(array $parameters)
     {
         $config = $this->_config;
         $query = $this->_getParametersAsString($parameters);
@@ -1017,7 +1017,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
      *
      * return [status, body, ResponseHeaderMetadata]
      */
-    private function _extractHeadersAndBody($response){
+    protected function _extractHeadersAndBody($response){
         //First split by 2 'CRLF'
         $responseComponents = preg_split("/(?:\r?\n){2}/", $response);
         $body = null;
@@ -1059,7 +1059,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
      * ...
      * returns String statusCode or null if the status line can't be parsed
      */
-    private function _extractHttpStatusCode($headers){
+    protected function _extractHttpStatusCode($headers){
     	$statusCode = null; 
         if (1 === preg_match("/(\\S+) +(\\d+) +([^\n\r]+)(?:\r?\n|\r)/", $headers, $matches)) {
         	//The matches array [entireMatchString, protocol, statusCode, the rest]
@@ -1073,7 +1073,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
      * has content.  In this case
      * return true if there is a valid "Content-Length" or "Transfer-Encoding" header
      */
-    private function _httpHeadersHaveContent($headers){
+    protected function _httpHeadersHaveContent($headers){
         return (1 === preg_match("/[cC]ontent-[lL]ength: +(?:\\d+)(?:\\r?\\n|\\r|$)/", $headers) ||
                 1 === preg_match("/Transfer-Encoding: +(?!identity[\r\n;= ])(?:[^\r\n]+)(?:\r?\n|\r|$)/i", $headers));
     }
@@ -1081,7 +1081,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
     /**
     *  extract a ResponseHeaderMetadata object from the raw headers
     */
-    private function _extractResponseHeaderMetadata($rawHeaders){
+    protected function _extractResponseHeaderMetadata($rawHeaders){
         $inputHeaders = preg_split("/\r\n|\n|\r/", $rawHeaders);
         $headers = array();
         $headers['x-mws-request-id'] = null;
@@ -1127,7 +1127,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
      *
      * @param retries current retry
      */
-    private function _pauseOnRetry($retries)
+    protected function _pauseOnRetry($retries)
     {
         if ($retries <= $this->_config['MaxErrorRetry']) {
             $delay = (int) (pow(4, $retries) * 100000);
@@ -1140,7 +1140,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
     /**
      * Add authentication related and version parameters
      */
-    private function _addRequiredParameters(array $parameters)
+    protected function _addRequiredParameters(array $parameters)
     {
         $parameters['AWSAccessKeyId'] = $this->_awsAccessKeyId;
         $parameters['Timestamp'] = $this->_getFormattedTimestamp();
@@ -1157,7 +1157,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
     /**
      * Convert paremeters to Url encoded query string
      */
-    private function _getParametersAsString(array $parameters)
+    protected function _getParametersAsString(array $parameters)
     {
         $queryParameters = array();
         foreach ($parameters as $key => $value) {
@@ -1197,7 +1197,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
      *       Pairs of parameter and values are separated by the '&' character (ASCII code 38).
      *
      */
-    private function _signParameters(array $parameters, $key) {
+    protected function _signParameters(array $parameters, $key) {
         $signatureVersion = $parameters['SignatureVersion'];
         $algorithm = "HmacSHA1";
         $stringToSign = null;
@@ -1216,7 +1216,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
      * @param array $parameters request parameters
      * @return String to Sign
      */
-    private function _calculateStringToSignV2(array $parameters) {
+    protected function _calculateStringToSignV2(array $parameters) {
         $data = 'POST';
         $data .= "\n";
         $endpoint = parse_url ($this->_config['ServiceURL']);
@@ -1234,7 +1234,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
         return $data;
     }
 
-    private function _urlencode($value) {
+    protected function _urlencode($value) {
         return str_replace('%7E', '~', rawurlencode($value));
     }
 
@@ -1242,7 +1242,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
     /**
      * Computes RFC 2104-compliant HMAC signature.
      */
-    private function _sign($data, $key, $algorithm)
+    protected function _sign($data, $key, $algorithm)
     {
         if ($algorithm === 'HmacSHA1') {
             $hash = 'sha1';
@@ -1260,7 +1260,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
     /**
      * Formats date as ISO 8601 timestamp
      */
-    private function _getFormattedTimestamp()
+    protected function _getFormattedTimestamp()
     {
         return gmdate("Y-m-d\TH:i:s.\\0\\0\\0\\Z", time());
     }
@@ -1268,7 +1268,7 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
     /**
      * Formats date as ISO 8601 timestamp
      */
-    private function getFormattedTimestamp($dateTime)
+    protected function getFormattedTimestamp($dateTime)
     {
         return $dateTime->format(DATE_ISO8601);
     }
