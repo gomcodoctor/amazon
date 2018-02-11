@@ -516,12 +516,9 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
         }
 
 
-        $finalRequest["std_options"] = array(CURLOPT_PORT => $port,
-            CURLOPT_POSTFIELDS => $query,
-            CURLOPT_HTTPHEADER => $allHeadersStr,
-            //CURLOPT_HTTPPROXYTUNNEL => false,
-            //CURLOPT_PROXY => $proxy
-        );
+        $finalRequest["query"] = $parameters;
+        $finalRequest["port"] = $port;
+        $finalRequest["headers"] = $allHeaders;
         $finalRequest["url"] = $scheme . $url['host'] . $uri;
         return $finalRequest;
     }
