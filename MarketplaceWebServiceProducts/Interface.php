@@ -1,6 +1,6 @@
 <?php
 /*******************************************************************************
- * Copyright 2009-2014 Amazon Services. All Rights Reserved.
+ * Copyright 2009-2017 Amazon Services. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License"); 
  *
  * You may not use this file except in compliance with the License. 
@@ -13,8 +13,8 @@
  * @category Amazon
  * @package  Marketplace Web Service Products
  * @version  2011-10-01
- * Library Version: 2014-10-20
- * Generated: Fri Oct 17 17:59:56 GMT 2014
+ * Library Version: 2017-03-22
+ * Generated: Wed Mar 22 23:24:40 UTC 2017
  */
 
 interface  MarketplaceWebServiceProducts_Interface
@@ -77,6 +77,34 @@ interface  MarketplaceWebServiceProducts_Interface
 
 
     /**
+     * Get Lowest Priced Offers For ASIN
+     * Retrieves the lowest priced offers based on the product identified by the given
+     *     ASIN.
+     *
+     * @param mixed $request array of parameters for MarketplaceWebServiceProducts_Model_GetLowestPricedOffersForASIN request or MarketplaceWebServiceProducts_Model_GetLowestPricedOffersForASIN object itself
+     * @see MarketplaceWebServiceProducts_Model_GetLowestPricedOffersForASINRequest
+     * @return MarketplaceWebServiceProducts_Model_GetLowestPricedOffersForASINResponse
+     *
+     * @throws MarketplaceWebServiceProducts_Exception
+     */
+    public function getLowestPricedOffersForASIN($request);
+
+
+    /**
+     * Get Lowest Priced Offers For SKU
+     * Retrieves the lowest priced offers based on the product identified by the given
+     *     SellerId and SKU.
+     *
+     * @param mixed $request array of parameters for MarketplaceWebServiceProducts_Model_GetLowestPricedOffersForSKU request or MarketplaceWebServiceProducts_Model_GetLowestPricedOffersForSKU object itself
+     * @see MarketplaceWebServiceProducts_Model_GetLowestPricedOffersForSKURequest
+     * @return MarketplaceWebServiceProducts_Model_GetLowestPricedOffersForSKUResponse
+     *
+     * @throws MarketplaceWebServiceProducts_Exception
+     */
+    public function getLowestPricedOffersForSKU($request);
+
+
+    /**
      * Get Matching Product
      * GetMatchingProduct will return the details (attributes) for the
      * given ASIN.
@@ -102,6 +130,21 @@ interface  MarketplaceWebServiceProducts_Interface
      * @throws MarketplaceWebServiceProducts_Exception
      */
     public function getMatchingProductForId($request);
+
+
+    /**
+     * Get My Fees Estimate
+     * Retrieves the fees estimate for the
+     *         products identified by the given
+     *         ASIN/SKU list.
+     *
+     * @param mixed $request array of parameters for MarketplaceWebServiceProducts_Model_GetMyFeesEstimate request or MarketplaceWebServiceProducts_Model_GetMyFeesEstimate object itself
+     * @see MarketplaceWebServiceProducts_Model_GetMyFeesEstimateRequest
+     * @return MarketplaceWebServiceProducts_Model_GetMyFeesEstimateResponse
+     *
+     * @throws MarketplaceWebServiceProducts_Exception
+     */
+    public function getMyFeesEstimate($request);
 
 
     /**

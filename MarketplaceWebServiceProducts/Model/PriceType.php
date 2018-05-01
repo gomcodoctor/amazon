@@ -1,6 +1,6 @@
 <?php
 /*******************************************************************************
- * Copyright 2009-2014 Amazon Services. All Rights Reserved.
+ * Copyright 2009-2017 Amazon Services. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License"); 
  *
  * You may not use this file except in compliance with the License. 
@@ -13,8 +13,8 @@
  * @category Amazon
  * @package  Marketplace Web Service Products
  * @version  2011-10-01
- * Library Version: 2014-10-20
- * Generated: Fri Oct 17 17:59:56 GMT 2014
+ * Library Version: 2017-03-22
+ * Generated: Wed Mar 22 23:24:40 UTC 2017
  */
 
 /**
@@ -33,6 +33,7 @@
  * <li>LandedPrice: MarketplaceWebServiceProducts_Model_MoneyType</li>
  * <li>ListingPrice: MarketplaceWebServiceProducts_Model_MoneyType</li>
  * <li>Shipping: MarketplaceWebServiceProducts_Model_MoneyType</li>
+ * <li>Points: MarketplaceWebServiceProducts_Model_Points</li>
  *
  * </ul>
  */
@@ -45,6 +46,7 @@
     'LandedPrice' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_MoneyType'),
     'ListingPrice' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_MoneyType'),
     'Shipping' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_MoneyType'),
+    'Points' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_Points'),
     );
     parent::__construct($data);
     }
@@ -184,6 +186,52 @@
     public function withShipping($value)
     {
         $this->setShipping($value);
+        return $this;
+    }
+
+    /**
+     * Get the value of the Points property.
+     *
+     * @return Points Points.
+     */
+    public function getPoints()
+    {
+        return $this->_fields['Points']['FieldValue'];
+    }
+
+    /**
+     * Set the value of the Points property.
+     *
+     * @param MarketplaceWebServiceProducts_Model_Points points
+     * @return this instance
+     */
+    public function setPoints($value)
+    {
+        $this->_fields['Points']['FieldValue'] = $value;
+        return $this;
+    }
+
+    /**
+     * Check to see if Points is set.
+     *
+     * @return true if Points is set.
+     */
+    public function isSetPoints()
+    {
+                return !is_null($this->_fields['Points']['FieldValue']);
+            }
+
+    /**
+     * Set the value of Points, return this.
+     *
+     * @param points
+     *             The new value to set.
+     *
+     * @return This instance.
+     */
+    public function withPoints($value)
+    {
+        $this->setPoints($value);
         return $this;
     }
 

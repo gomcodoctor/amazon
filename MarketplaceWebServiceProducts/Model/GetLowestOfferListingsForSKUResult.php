@@ -1,6 +1,6 @@
 <?php
 /*******************************************************************************
- * Copyright 2009-2014 Amazon Services. All Rights Reserved.
+ * Copyright 2009-2017 Amazon Services. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License"); 
  *
  * You may not use this file except in compliance with the License. 
@@ -13,8 +13,8 @@
  * @category Amazon
  * @package  Marketplace Web Service Products
  * @version  2011-10-01
- * Library Version: 2014-10-20
- * Generated: Fri Oct 17 17:59:56 GMT 2014
+ * Library Version: 2017-03-22
+ * Generated: Wed Mar 22 23:24:40 UTC 2017
  */
 
 /**
@@ -47,7 +47,7 @@
     'AllOfferListingsConsidered' => array('FieldValue' => null, 'FieldType' => 'bool'),
     'Product' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_Product'),
     'Error' => array('FieldValue' => null, 'FieldType' => 'MarketplaceWebServiceProducts_Model_Error'),
-    'SellerSKU' => array('FieldValue' => null, 'FieldType' => 'string'),
+    'SellerSKU' => array('FieldValue' => null, 'FieldType' => '@string'),
     'status' => array('FieldValue' => null, 'FieldType' => '@string'),
     );
     parent::__construct($data);

@@ -26,7 +26,7 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
     {
         if($request){
             if (!($request instanceof MarketplaceWebServiceProducts_Model_GetCompetitivePricingForASINRequest)) {
-                //require_once (dirname(__FILE__) . '/Model/GetCompetitivePricingForASINRequest.php');
+                ////require_once (dirname(__FILE__) . '/Model/GetCompetitivePricingForASINRequest.php');
                 $request = new MarketplaceWebServiceProducts_Model_GetCompetitivePricingForASINRequest($request);
             }
             $parameters = $request->toQueryParameterArray();
@@ -35,7 +35,7 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
             return $httpResponse;
         }
         else if ($processResponse){
-            //require_once (dirname(__FILE__) . '/Model/GetCompetitivePricingForASINResponse.php');
+            ////require_once (dirname(__FILE__) . '/Model/GetCompetitivePricingForASINResponse.php');
             $response = MarketplaceWebServiceProducts_Model_GetCompetitivePricingForASINResponse::fromXML($processResponse['ResponseBody']);
             $response->setResponseHeaderMetadata($processResponse['ResponseHeaderMetadata']);
             return $response;
@@ -61,7 +61,7 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
     {
         if($request){
             if (!($request instanceof MarketplaceWebServiceProducts_Model_GetCompetitivePricingForSKURequest)) {
-                //require_once (dirname(__FILE__) . '/Model/GetCompetitivePricingForSKURequest.php');
+                ////require_once (dirname(__FILE__) . '/Model/GetCompetitivePricingForSKURequest.php');
                 $request = new MarketplaceWebServiceProducts_Model_GetCompetitivePricingForSKURequest($request);
             }
             $parameters = $request->toQueryParameterArray();
@@ -70,7 +70,7 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
             return $httpResponse;
         }
         if($processResponse){
-            //require_once (dirname(__FILE__) . '/Model/GetCompetitivePricingForSKUResponse.php');
+            ////require_once (dirname(__FILE__) . '/Model/GetCompetitivePricingForSKUResponse.php');
             $response = MarketplaceWebServiceProducts_Model_GetCompetitivePricingForSKUResponse::fromXML($processResponse['ResponseBody']);
             $response->setResponseHeaderMetadata($processResponse['ResponseHeaderMetadata']);
             return $response;
@@ -96,7 +96,7 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
     {
         if($request){
             if (!($request instanceof MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForASINRequest)) {
-                //require_once (dirname(__FILE__) . '/Model/GetLowestOfferListingsForASINRequest.php');
+                ////require_once (dirname(__FILE__) . '/Model/GetLowestOfferListingsForASINRequest.php');
                 $request = new MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForASINRequest($request);
             }
             $parameters = $request->toQueryParameterArray();
@@ -106,7 +106,7 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
         }
 
         if($processResponse){
-            //require_once (dirname(__FILE__) . '/Model/GetLowestOfferListingsForASINResponse.php');
+            ////require_once (dirname(__FILE__) . '/Model/GetLowestOfferListingsForASINResponse.php');
             $response = MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForASINResponse::fromXML($processResponse['ResponseBody']);
             $response->setResponseHeaderMetadata($processResponse['ResponseHeaderMetadata']);
             return $response;
@@ -132,7 +132,7 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
     {
         if($request){
             if (!($request instanceof MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKURequest)) {
-                //require_once (dirname(__FILE__) . '/Model/GetLowestOfferListingsForSKURequest.php');
+                ////require_once (dirname(__FILE__) . '/Model/GetLowestOfferListingsForSKURequest.php');
                 $request = new MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKURequest($request);
             }
             $parameters = $request->toQueryParameterArray();
@@ -141,7 +141,7 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
             return $httpResponse;
         }
         if($processResponse){
-            //require_once (dirname(__FILE__) . '/Model/GetLowestOfferListingsForSKUResponse.php');
+            ////require_once (dirname(__FILE__) . '/Model/GetLowestOfferListingsForSKUResponse.php');
             $response = MarketplaceWebServiceProducts_Model_GetLowestOfferListingsForSKUResponse::fromXML($processResponse['ResponseBody']);
             $response->setResponseHeaderMetadata($processResponse['ResponseHeaderMetadata']);
             return $response;
@@ -166,7 +166,7 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
     {
         if($request){
             if (!($request instanceof MarketplaceWebServiceProducts_Model_GetMatchingProductRequest)) {
-                //require_once (dirname(__FILE__) . '/Model/GetMatchingProductRequest.php');
+                ////require_once (dirname(__FILE__) . '/Model/GetMatchingProductRequest.php');
                 $request = new MarketplaceWebServiceProducts_Model_GetMatchingProductRequest($request);
             }
             $parameters = $request->toQueryParameterArray();
@@ -175,7 +175,7 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
             return $httpResponse;
         }
         else if($processResponse){
-            //require_once (dirname(__FILE__) . '/Model/GetMatchingProductResponse.php');
+            ////require_once (dirname(__FILE__) . '/Model/GetMatchingProductResponse.php');
             $response = MarketplaceWebServiceProducts_Model_GetMatchingProductResponse::fromXML($processResponse['ResponseBody']);
             $response->setResponseHeaderMetadata($processResponse['ResponseHeaderMetadata']);
             return $response;
@@ -200,7 +200,7 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
     {
         if($request){
             if (!($request instanceof MarketplaceWebServiceProducts_Model_GetMatchingProductForIdRequest)) {
-                //require_once (dirname(__FILE__) . '/Model/GetMatchingProductForIdRequest.php');
+                ////require_once (dirname(__FILE__) . '/Model/GetMatchingProductForIdRequest.php');
                 $request = new MarketplaceWebServiceProducts_Model_GetMatchingProductForIdRequest($request);
             }
             $parameters = $request->toQueryParameterArray();
@@ -209,7 +209,7 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
             return $httpResponse;
         }
         else if($processResponse){
-            //require_once (dirname(__FILE__) . '/Model/GetMatchingProductForIdResponse.php');
+            ////require_once (dirname(__FILE__) . '/Model/GetMatchingProductForIdResponse.php');
             $response = MarketplaceWebServiceProducts_Model_GetMatchingProductForIdResponse::fromXML($processResponse['ResponseBody']);
             $response->setResponseHeaderMetadata($processResponse['ResponseHeaderMetadata']);
             return $response;
@@ -233,7 +233,7 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
     {
         if($request){
             if (!($request instanceof MarketplaceWebServiceProducts_Model_GetMyPriceForASINRequest)) {
-                //require_once (dirname(__FILE__) . '/Model/GetMyPriceForASINRequest.php');
+                ////require_once (dirname(__FILE__) . '/Model/GetMyPriceForASINRequest.php');
                 $request = new MarketplaceWebServiceProducts_Model_GetMyPriceForASINRequest($request);
             }
             $parameters = $request->toQueryParameterArray();
@@ -242,7 +242,7 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
             return $httpResponse;
         }
         if($processResponse){
-            //require_once (dirname(__FILE__) . '/Model/GetMyPriceForASINResponse.php');
+            ////require_once (dirname(__FILE__) . '/Model/GetMyPriceForASINResponse.php');
             $response = MarketplaceWebServiceProducts_Model_GetMyPriceForASINResponse::fromXML($processResponse['ResponseBody']);
             $response->setResponseHeaderMetadata($processResponse['ResponseHeaderMetadata']);
             return $response;
@@ -266,7 +266,7 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
     {
         if($request){
             if (!($request instanceof MarketplaceWebServiceProducts_Model_GetMyPriceForSKURequest)) {
-                //require_once (dirname(__FILE__) . '/Model/GetMyPriceForSKURequest.php');
+                ////require_once (dirname(__FILE__) . '/Model/GetMyPriceForSKURequest.php');
                 $request = new MarketplaceWebServiceProducts_Model_GetMyPriceForSKURequest($request);
             }
             $parameters = $request->toQueryParameterArray();
@@ -275,7 +275,7 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
             return $httpResponse;
         }
         else if($processResponse){
-            //require_once (dirname(__FILE__) . '/Model/GetMyPriceForSKUResponse.php');
+            ////require_once (dirname(__FILE__) . '/Model/GetMyPriceForSKUResponse.php');
             $response = MarketplaceWebServiceProducts_Model_GetMyPriceForSKUResponse::fromXML($processResponse['ResponseBody']);
             $response->setResponseHeaderMetadata($processResponse['ResponseHeaderMetadata']);
             return $response;
@@ -302,7 +302,7 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
     {
         if($request){
             if (!($request instanceof MarketplaceWebServiceProducts_Model_GetProductCategoriesForASINRequest)) {
-                //require_once (dirname(__FILE__) . '/Model/GetProductCategoriesForASINRequest.php');
+                ////require_once (dirname(__FILE__) . '/Model/GetProductCategoriesForASINRequest.php');
                 $request = new MarketplaceWebServiceProducts_Model_GetProductCategoriesForASINRequest($request);
             }
             $parameters = $request->toQueryParameterArray();
@@ -311,7 +311,7 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
             return $httpResponse;
         }
         else if($processResponse){
-            //require_once (dirname(__FILE__) . '/Model/GetProductCategoriesForASINResponse.php');
+            ////require_once (dirname(__FILE__) . '/Model/GetProductCategoriesForASINResponse.php');
             $response = MarketplaceWebServiceProducts_Model_GetProductCategoriesForASINResponse::fromXML($processResponse['ResponseBody']);
             $response->setResponseHeaderMetadata($processResponse['ResponseHeaderMetadata']);
             return $response;
@@ -336,7 +336,7 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
     {
         if($request){
             if (!($request instanceof MarketplaceWebServiceProducts_Model_GetProductCategoriesForSKURequest)) {
-                //require_once (dirname(__FILE__) . '/Model/GetProductCategoriesForSKURequest.php');
+                ////require_once (dirname(__FILE__) . '/Model/GetProductCategoriesForSKURequest.php');
                 $request = new MarketplaceWebServiceProducts_Model_GetProductCategoriesForSKURequest($request);
             }
             $parameters = $request->toQueryParameterArray();
@@ -345,7 +345,7 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
             return $httpResponse;
         }
         else if ($processResponse){
-            //require_once (dirname(__FILE__) . '/Model/GetProductCategoriesForSKUResponse.php');
+            ////require_once (dirname(__FILE__) . '/Model/GetProductCategoriesForSKUResponse.php');
             $response = MarketplaceWebServiceProducts_Model_GetProductCategoriesForSKUResponse::fromXML($processResponse['ResponseBody']);
             $response->setResponseHeaderMetadata($processResponse['ResponseHeaderMetadata']);
             return $response;
@@ -372,7 +372,7 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
     {
         if($request){
             if (!($request instanceof MarketplaceWebServiceProducts_Model_GetServiceStatusRequest)) {
-                //require_once (dirname(__FILE__) . '/Model/GetServiceStatusRequest.php');
+                ////require_once (dirname(__FILE__) . '/Model/GetServiceStatusRequest.php');
                 $request = new MarketplaceWebServiceProducts_Model_GetServiceStatusRequest($request);
             }
             $parameters = $request->toQueryParameterArray();
@@ -381,7 +381,7 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
             return $httpResponse;
         }
         else if($processResponse){
-            //require_once (dirname(__FILE__) . '/Model/GetServiceStatusResponse.php');
+            ////require_once (dirname(__FILE__) . '/Model/GetServiceStatusResponse.php');
             $response = MarketplaceWebServiceProducts_Model_GetServiceStatusResponse::fromXML($processResponse['ResponseBody']);
             $response->setResponseHeaderMetadata($processResponse['ResponseHeaderMetadata']);
             return $response;
@@ -405,7 +405,7 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
     {
         if($request){
             if (!($request instanceof MarketplaceWebServiceProducts_Model_ListMatchingProductsRequest)) {
-                //require_once (dirname(__FILE__) . '/Model/ListMatchingProductsRequest.php');
+                ////require_once (dirname(__FILE__) . '/Model/ListMatchingProductsRequest.php');
                 $request = new MarketplaceWebServiceProducts_Model_ListMatchingProductsRequest($request);
             }
             $parameters = $request->toQueryParameterArray();
@@ -413,7 +413,7 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
             $httpResponse = $this->_invoke($parameters);
         }
         if($processResponse){
-            //require_once (dirname(__FILE__) . '/Model/ListMatchingProductsResponse.php');
+            ////require_once (dirname(__FILE__) . '/Model/ListMatchingProductsResponse.php');
             $response = MarketplaceWebServiceProducts_Model_ListMatchingProductsResponse::fromXML($processResponse['ResponseBody']);
             $response->setResponseHeaderMetadata($processResponse['ResponseHeaderMetadata']);
             return $response;
@@ -458,7 +458,7 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
     {
         try {
             if (empty($this->_config['ServiceURL'])) {
-                //require_once (dirname(__FILE__) . '/Exception.php');
+                ////require_once (dirname(__FILE__) . '/Exception.php');
                 throw new MarketplaceWebServiceProducts_Exception(
                     array ('ErrorCode' => 'InvalidServiceURL',
                         'Message' => "Missing serviceUrl configuration value. You may obtain a list of valid MWS URLs by consulting the MWS Developer's Guide, or reviewing the sample code published along side this library."));
@@ -473,7 +473,7 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
         } catch (MarketplaceWebServiceProducts_Exception $se) {
             throw $se;
         } catch (Exception $t) {
-            //require_once (dirname(__FILE__) . '/Exception.php');
+            ////require_once (dirname(__FILE__) . '/Exception.php');
             throw new MarketplaceWebServiceProducts_Exception(array('Exception' => $t, 'Message' => $t->getMessage()));
         }
     }
