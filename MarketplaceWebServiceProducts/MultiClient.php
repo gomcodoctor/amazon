@@ -149,6 +149,38 @@ class MarketplaceWebServiceProducts_MultiClient extends \MarketplaceWebServicePr
 
     }
 
+    /**
+     * Get Lowest Priced Offers For ASIN
+     * Retrieves the lowest priced offers based on the product identified by the given
+     *     ASIN.
+     *
+     * @param mixed $request array of parameters for MarketplaceWebServiceProducts_Model_GetLowestPricedOffersForASIN request or MarketplaceWebServiceProducts_Model_GetLowestPricedOffersForASIN object itself
+     * @see MarketplaceWebServiceProducts_Model_GetLowestPricedOffersForASINRequest
+     * @return MarketplaceWebServiceProducts_Model_GetLowestPricedOffersForASINResponse
+     *
+     * @throws MarketplaceWebServiceProducts_Exception
+     */
+    public function getLowestPricedOffersForASIN($request, $processResponse = false)
+    {
+        if($request){
+            if (!($request instanceof MarketplaceWebServiceProducts_Model_GetLowestPricedOffersForASINRequest)) {
+                //require_once (dirname(__FILE__) . '/Model/GetLowestPricedOffersForASINRequest.php');
+                $request = new MarketplaceWebServiceProducts_Model_GetLowestPricedOffersForASINRequest($request);
+            }
+            $parameters = $request->toQueryParameterArray();
+            $parameters['Action'] = 'GetLowestPricedOffersForASIN';
+            $httpResponse = $this->_invoke($parameters);
+            return $httpResponse;
+        }
+
+        if($processResponse){
+            //require_once (dirname(__FILE__) . '/Model/GetLowestPricedOffersForASINResponse.php');
+            $response = MarketplaceWebServiceProducts_Model_GetLowestPricedOffersForASINResponse::fromXML($processResponse['ResponseBody']);
+            $response->setResponseHeaderMetadata($processResponse['ResponseHeaderMetadata']);
+            return $response;
+        }
+    }
+
 
 
     /**
