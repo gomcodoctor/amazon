@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * ByLineInfo Class Doc Comment
@@ -44,9 +44,9 @@ class ByLineInfo implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'brand' => '\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute',
-        'contributors' => '\Amazon\ProductAdvertisingAPI\v1\Model\Contributor[]',
-        'manufacturer' => '\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute'
+        'brand' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute',
+        'contributors' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Contributor[]',
+        'manufacturer' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute'
     ];
 
     /**
@@ -207,7 +207,7 @@ class ByLineInfo implements ModelInterface, ArrayAccess
     /**
      * Gets brand
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute
      */
     public function getBrand()
     {
@@ -217,7 +217,7 @@ class ByLineInfo implements ModelInterface, ArrayAccess
     /**
      * Sets brand
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute $brand brand
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute $brand brand
      *
      * @return $this
      */
@@ -231,7 +231,7 @@ class ByLineInfo implements ModelInterface, ArrayAccess
     /**
      * Gets contributors
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\Contributor[]
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Contributor[]
      */
     public function getContributors()
     {
@@ -241,7 +241,7 @@ class ByLineInfo implements ModelInterface, ArrayAccess
     /**
      * Sets contributors
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\Contributor[] $contributors contributors
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Contributor[] $contributors contributors
      *
      * @return $this
      */
@@ -255,7 +255,7 @@ class ByLineInfo implements ModelInterface, ArrayAccess
     /**
      * Gets manufacturer
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute
      */
     public function getManufacturer()
     {
@@ -265,7 +265,7 @@ class ByLineInfo implements ModelInterface, ArrayAccess
     /**
      * Sets manufacturer
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute $manufacturer manufacturer
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute $manufacturer manufacturer
      *
      * @return $this
      */

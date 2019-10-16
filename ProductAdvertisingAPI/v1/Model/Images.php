@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * Images Class Doc Comment
@@ -44,8 +44,8 @@ class Images implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'primary' => '\Amazon\ProductAdvertisingAPI\v1\Model\ImageType',
-        'variants' => '\Amazon\ProductAdvertisingAPI\v1\Model\ImageType[]'
+        'primary' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ImageType',
+        'variants' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ImageType[]'
     ];
 
     /**
@@ -201,7 +201,7 @@ class Images implements ModelInterface, ArrayAccess
     /**
      * Gets primary
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\ImageType
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ImageType
      */
     public function getPrimary()
     {
@@ -211,7 +211,7 @@ class Images implements ModelInterface, ArrayAccess
     /**
      * Sets primary
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\ImageType $primary primary
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ImageType $primary primary
      *
      * @return $this
      */
@@ -225,7 +225,7 @@ class Images implements ModelInterface, ArrayAccess
     /**
      * Gets variants
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\ImageType[]
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ImageType[]
      */
     public function getVariants()
     {
@@ -235,7 +235,7 @@ class Images implements ModelInterface, ArrayAccess
     /**
      * Sets variants
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\ImageType[] $variants variants
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ImageType[] $variants variants
      *
      * @return $this
      */

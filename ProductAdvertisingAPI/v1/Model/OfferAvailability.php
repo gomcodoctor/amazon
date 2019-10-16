@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * OfferAvailability Class Doc Comment

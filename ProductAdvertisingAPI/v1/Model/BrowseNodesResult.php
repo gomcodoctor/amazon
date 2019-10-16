@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * BrowseNodesResult Class Doc Comment
@@ -44,7 +44,7 @@ class BrowseNodesResult implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'browseNodes' => '\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNode[]'
+        'browseNodes' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNode[]'
     ];
 
     /**
@@ -195,7 +195,7 @@ class BrowseNodesResult implements ModelInterface, ArrayAccess
     /**
      * Gets browseNodes
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\BrowseNode[]
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNode[]
      */
     public function getBrowseNodes()
     {
@@ -205,7 +205,7 @@ class BrowseNodesResult implements ModelInterface, ArrayAccess
     /**
      * Sets browseNodes
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\BrowseNode[] $browseNodes browseNodes
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNode[] $browseNodes browseNodes
      *
      * @return $this
      */

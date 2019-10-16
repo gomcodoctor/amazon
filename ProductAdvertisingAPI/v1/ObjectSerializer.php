@@ -277,10 +277,12 @@ class ObjectSerializer
             }
             return $data;
         } else {
+//            echo $class;
             // If a discriminator is defined and points to a valid subclass, use it.
             $discriminator = $class::DISCRIMINATOR;
+
             if (!empty($discriminator) && isset($data->{$discriminator}) && is_string($data->{$discriminator})) {
-                $subclass = '\Amazon\ProductAdvertisingAPI\v1\Model\\' . $data->{$discriminator};
+                $subclass = '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\\' . $data->{$discriminator};
                 if (is_subclass_of($subclass, $class)) {
                     $class = $subclass;
                 }

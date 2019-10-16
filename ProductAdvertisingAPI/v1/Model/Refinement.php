@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * Refinement Class Doc Comment
@@ -44,7 +44,7 @@ class Refinement implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'bins' => '\Amazon\ProductAdvertisingAPI\v1\Model\RefinementBin[]',
+        'bins' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\RefinementBin[]',
         'displayName' => 'string',
         'id' => 'string'
     ];
@@ -207,7 +207,7 @@ class Refinement implements ModelInterface, ArrayAccess
     /**
      * Gets bins
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\RefinementBin[]
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\RefinementBin[]
      */
     public function getBins()
     {
@@ -217,7 +217,7 @@ class Refinement implements ModelInterface, ArrayAccess
     /**
      * Sets bins
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\RefinementBin[] $bins bins
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\RefinementBin[] $bins bins
      *
      * @return $this
      */

@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * VariationsResult Class Doc Comment
@@ -44,8 +44,8 @@ class VariationsResult implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'items' => '\Amazon\ProductAdvertisingAPI\v1\Model\Item[]',
-        'variationSummary' => '\Amazon\ProductAdvertisingAPI\v1\Model\VariationSummary'
+        'items' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Item[]',
+        'variationSummary' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\VariationSummary'
     ];
 
     /**
@@ -201,7 +201,7 @@ class VariationsResult implements ModelInterface, ArrayAccess
     /**
      * Gets items
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\Item[]
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Item[]
      */
     public function getItems()
     {
@@ -211,7 +211,7 @@ class VariationsResult implements ModelInterface, ArrayAccess
     /**
      * Sets items
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\Item[] $items items
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Item[] $items items
      *
      * @return $this
      */
@@ -225,7 +225,7 @@ class VariationsResult implements ModelInterface, ArrayAccess
     /**
      * Gets variationSummary
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\VariationSummary
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\VariationSummary
      */
     public function getVariationSummary()
     {
@@ -235,7 +235,7 @@ class VariationsResult implements ModelInterface, ArrayAccess
     /**
      * Sets variationSummary
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\VariationSummary $variationSummary variationSummary
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\VariationSummary $variationSummary variationSummary
      *
      * @return $this
      */

@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * ItemInfo Class Doc Comment
@@ -44,16 +44,16 @@ class ItemInfo implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'byLineInfo' => '\Amazon\ProductAdvertisingAPI\v1\Model\ByLineInfo',
-        'classifications' => '\Amazon\ProductAdvertisingAPI\v1\Model\Classifications',
-        'contentInfo' => '\Amazon\ProductAdvertisingAPI\v1\Model\ContentInfo',
-        'contentRating' => '\Amazon\ProductAdvertisingAPI\v1\Model\ContentRating',
-        'externalIds' => '\Amazon\ProductAdvertisingAPI\v1\Model\ExternalIds',
-        'features' => '\Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute',
-        'manufactureInfo' => '\Amazon\ProductAdvertisingAPI\v1\Model\ManufactureInfo',
-        'productInfo' => '\Amazon\ProductAdvertisingAPI\v1\Model\ProductInfo',
-        'technicalInfo' => '\Amazon\ProductAdvertisingAPI\v1\Model\TechnicalInfo',
-        'title' => '\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute'
+        'byLineInfo' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ByLineInfo',
+        'classifications' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Classifications',
+        'contentInfo' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ContentInfo',
+        'contentRating' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ContentRating',
+        'externalIds' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ExternalIds',
+        'features' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute',
+        'manufactureInfo' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ManufactureInfo',
+        'productInfo' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ProductInfo',
+        'technicalInfo' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\TechnicalInfo',
+        'title' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute'
     ];
 
     /**
@@ -249,7 +249,7 @@ class ItemInfo implements ModelInterface, ArrayAccess
     /**
      * Gets byLineInfo
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\ByLineInfo
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ByLineInfo
      */
     public function getByLineInfo()
     {
@@ -259,7 +259,7 @@ class ItemInfo implements ModelInterface, ArrayAccess
     /**
      * Sets byLineInfo
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\ByLineInfo $byLineInfo byLineInfo
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ByLineInfo $byLineInfo byLineInfo
      *
      * @return $this
      */
@@ -273,7 +273,7 @@ class ItemInfo implements ModelInterface, ArrayAccess
     /**
      * Gets classifications
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\Classifications
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Classifications
      */
     public function getClassifications()
     {
@@ -283,7 +283,7 @@ class ItemInfo implements ModelInterface, ArrayAccess
     /**
      * Sets classifications
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\Classifications $classifications classifications
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Classifications $classifications classifications
      *
      * @return $this
      */
@@ -297,7 +297,7 @@ class ItemInfo implements ModelInterface, ArrayAccess
     /**
      * Gets contentInfo
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\ContentInfo
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ContentInfo
      */
     public function getContentInfo()
     {
@@ -307,7 +307,7 @@ class ItemInfo implements ModelInterface, ArrayAccess
     /**
      * Sets contentInfo
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\ContentInfo $contentInfo contentInfo
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ContentInfo $contentInfo contentInfo
      *
      * @return $this
      */
@@ -321,7 +321,7 @@ class ItemInfo implements ModelInterface, ArrayAccess
     /**
      * Gets contentRating
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\ContentRating
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ContentRating
      */
     public function getContentRating()
     {
@@ -331,7 +331,7 @@ class ItemInfo implements ModelInterface, ArrayAccess
     /**
      * Sets contentRating
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\ContentRating $contentRating contentRating
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ContentRating $contentRating contentRating
      *
      * @return $this
      */
@@ -345,7 +345,7 @@ class ItemInfo implements ModelInterface, ArrayAccess
     /**
      * Gets externalIds
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\ExternalIds
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ExternalIds
      */
     public function getExternalIds()
     {
@@ -355,7 +355,7 @@ class ItemInfo implements ModelInterface, ArrayAccess
     /**
      * Sets externalIds
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\ExternalIds $externalIds externalIds
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ExternalIds $externalIds externalIds
      *
      * @return $this
      */
@@ -369,7 +369,7 @@ class ItemInfo implements ModelInterface, ArrayAccess
     /**
      * Gets features
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute
      */
     public function getFeatures()
     {
@@ -379,7 +379,7 @@ class ItemInfo implements ModelInterface, ArrayAccess
     /**
      * Sets features
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute $features features
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute $features features
      *
      * @return $this
      */
@@ -393,7 +393,7 @@ class ItemInfo implements ModelInterface, ArrayAccess
     /**
      * Gets manufactureInfo
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\ManufactureInfo
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ManufactureInfo
      */
     public function getManufactureInfo()
     {
@@ -403,7 +403,7 @@ class ItemInfo implements ModelInterface, ArrayAccess
     /**
      * Sets manufactureInfo
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\ManufactureInfo $manufactureInfo manufactureInfo
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ManufactureInfo $manufactureInfo manufactureInfo
      *
      * @return $this
      */
@@ -417,7 +417,7 @@ class ItemInfo implements ModelInterface, ArrayAccess
     /**
      * Gets productInfo
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\ProductInfo
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ProductInfo
      */
     public function getProductInfo()
     {
@@ -427,7 +427,7 @@ class ItemInfo implements ModelInterface, ArrayAccess
     /**
      * Sets productInfo
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\ProductInfo $productInfo productInfo
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ProductInfo $productInfo productInfo
      *
      * @return $this
      */
@@ -441,7 +441,7 @@ class ItemInfo implements ModelInterface, ArrayAccess
     /**
      * Gets technicalInfo
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\TechnicalInfo
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\TechnicalInfo
      */
     public function getTechnicalInfo()
     {
@@ -451,7 +451,7 @@ class ItemInfo implements ModelInterface, ArrayAccess
     /**
      * Sets technicalInfo
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\TechnicalInfo $technicalInfo technicalInfo
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\TechnicalInfo $technicalInfo technicalInfo
      *
      * @return $this
      */
@@ -465,7 +465,7 @@ class ItemInfo implements ModelInterface, ArrayAccess
     /**
      * Gets title
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute
      */
     public function getTitle()
     {
@@ -475,7 +475,7 @@ class ItemInfo implements ModelInterface, ArrayAccess
     /**
      * Sets title
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute $title title
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute $title title
      *
      * @return $this
      */

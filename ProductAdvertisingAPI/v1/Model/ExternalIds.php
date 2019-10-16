@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * ExternalIds Class Doc Comment
@@ -44,9 +44,9 @@ class ExternalIds implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'eANs' => '\Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute',
-        'iSBNs' => '\Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute',
-        'uPCs' => '\Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute'
+        'eANs' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute',
+        'iSBNs' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute',
+        'uPCs' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute'
     ];
 
     /**
@@ -207,7 +207,7 @@ class ExternalIds implements ModelInterface, ArrayAccess
     /**
      * Gets eANs
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute
      */
     public function getEANs()
     {
@@ -217,7 +217,7 @@ class ExternalIds implements ModelInterface, ArrayAccess
     /**
      * Sets eANs
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute $eANs eANs
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute $eANs eANs
      *
      * @return $this
      */
@@ -231,7 +231,7 @@ class ExternalIds implements ModelInterface, ArrayAccess
     /**
      * Gets iSBNs
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute
      */
     public function getISBNs()
     {
@@ -241,7 +241,7 @@ class ExternalIds implements ModelInterface, ArrayAccess
     /**
      * Sets iSBNs
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute $iSBNs iSBNs
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute $iSBNs iSBNs
      *
      * @return $this
      */
@@ -255,7 +255,7 @@ class ExternalIds implements ModelInterface, ArrayAccess
     /**
      * Gets uPCs
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute
      */
     public function getUPCs()
     {
@@ -265,7 +265,7 @@ class ExternalIds implements ModelInterface, ArrayAccess
     /**
      * Sets uPCs
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute $uPCs uPCs
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute $uPCs uPCs
      *
      * @return $this
      */

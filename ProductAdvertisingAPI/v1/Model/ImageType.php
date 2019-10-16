@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * ImageType Class Doc Comment
@@ -44,9 +44,9 @@ class ImageType implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'small' => '\Amazon\ProductAdvertisingAPI\v1\Model\ImageSize',
-        'medium' => '\Amazon\ProductAdvertisingAPI\v1\Model\ImageSize',
-        'large' => '\Amazon\ProductAdvertisingAPI\v1\Model\ImageSize'
+        'small' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ImageSize',
+        'medium' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ImageSize',
+        'large' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ImageSize'
     ];
 
     /**
@@ -207,7 +207,7 @@ class ImageType implements ModelInterface, ArrayAccess
     /**
      * Gets small
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\ImageSize
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ImageSize
      */
     public function getSmall()
     {
@@ -217,7 +217,7 @@ class ImageType implements ModelInterface, ArrayAccess
     /**
      * Sets small
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\ImageSize $small small
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ImageSize $small small
      *
      * @return $this
      */
@@ -231,7 +231,7 @@ class ImageType implements ModelInterface, ArrayAccess
     /**
      * Gets medium
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\ImageSize
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ImageSize
      */
     public function getMedium()
     {
@@ -241,7 +241,7 @@ class ImageType implements ModelInterface, ArrayAccess
     /**
      * Sets medium
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\ImageSize $medium medium
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ImageSize $medium medium
      *
      * @return $this
      */
@@ -255,7 +255,7 @@ class ImageType implements ModelInterface, ArrayAccess
     /**
      * Gets large
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\ImageSize
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ImageSize
      */
     public function getLarge()
     {
@@ -265,7 +265,7 @@ class ImageType implements ModelInterface, ArrayAccess
     /**
      * Sets large
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\ImageSize $large large
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ImageSize $large large
      *
      * @return $this
      */

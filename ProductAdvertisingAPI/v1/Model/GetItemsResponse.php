@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * GetItemsResponse Class Doc Comment
@@ -44,8 +44,8 @@ class GetItemsResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'errors' => '\Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[]',
-        'itemsResult' => '\Amazon\ProductAdvertisingAPI\v1\Model\ItemsResult'
+        'errors' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[]',
+        'itemsResult' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ItemsResult'
     ];
 
     /**
@@ -201,7 +201,7 @@ class GetItemsResponse implements ModelInterface, ArrayAccess
     /**
      * Gets errors
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[]
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[]
      */
     public function getErrors()
     {
@@ -211,7 +211,7 @@ class GetItemsResponse implements ModelInterface, ArrayAccess
     /**
      * Sets errors
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[] $errors errors
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[] $errors errors
      *
      * @return $this
      */
@@ -225,7 +225,7 @@ class GetItemsResponse implements ModelInterface, ArrayAccess
     /**
      * Gets itemsResult
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\ItemsResult
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ItemsResult
      */
     public function getItemsResult()
     {
@@ -235,7 +235,7 @@ class GetItemsResponse implements ModelInterface, ArrayAccess
     /**
      * Sets itemsResult
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\ItemsResult $itemsResult itemsResult
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ItemsResult $itemsResult itemsResult
      *
      * @return $this
      */

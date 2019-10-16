@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * ContentInfo Class Doc Comment
@@ -44,10 +44,10 @@ class ContentInfo implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'edition' => '\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute',
-        'languages' => '\Amazon\ProductAdvertisingAPI\v1\Model\Languages',
-        'pagesCount' => '\Amazon\ProductAdvertisingAPI\v1\Model\SingleIntegerValuedAttribute',
-        'publicationDate' => '\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute'
+        'edition' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute',
+        'languages' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Languages',
+        'pagesCount' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleIntegerValuedAttribute',
+        'publicationDate' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute'
     ];
 
     /**
@@ -213,7 +213,7 @@ class ContentInfo implements ModelInterface, ArrayAccess
     /**
      * Gets edition
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute
      */
     public function getEdition()
     {
@@ -223,7 +223,7 @@ class ContentInfo implements ModelInterface, ArrayAccess
     /**
      * Sets edition
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute $edition edition
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute $edition edition
      *
      * @return $this
      */
@@ -237,7 +237,7 @@ class ContentInfo implements ModelInterface, ArrayAccess
     /**
      * Gets languages
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\Languages
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Languages
      */
     public function getLanguages()
     {
@@ -247,7 +247,7 @@ class ContentInfo implements ModelInterface, ArrayAccess
     /**
      * Sets languages
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\Languages $languages languages
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Languages $languages languages
      *
      * @return $this
      */
@@ -261,7 +261,7 @@ class ContentInfo implements ModelInterface, ArrayAccess
     /**
      * Gets pagesCount
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\SingleIntegerValuedAttribute
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleIntegerValuedAttribute
      */
     public function getPagesCount()
     {
@@ -271,7 +271,7 @@ class ContentInfo implements ModelInterface, ArrayAccess
     /**
      * Sets pagesCount
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\SingleIntegerValuedAttribute $pagesCount pagesCount
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleIntegerValuedAttribute $pagesCount pagesCount
      *
      * @return $this
      */
@@ -285,7 +285,7 @@ class ContentInfo implements ModelInterface, ArrayAccess
     /**
      * Gets publicationDate
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute
      */
     public function getPublicationDate()
     {
@@ -295,7 +295,7 @@ class ContentInfo implements ModelInterface, ArrayAccess
     /**
      * Sets publicationDate
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute $publicationDate publicationDate
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute $publicationDate publicationDate
      *
      * @return $this
      */

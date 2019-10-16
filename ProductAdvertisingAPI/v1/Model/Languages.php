@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * Languages Class Doc Comment
@@ -44,7 +44,7 @@ class Languages implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'displayValues' => '\Amazon\ProductAdvertisingAPI\v1\Model\LanguageType[]',
+        'displayValues' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\LanguageType[]',
         'label' => 'string',
         'locale' => 'string'
     ];
@@ -207,7 +207,7 @@ class Languages implements ModelInterface, ArrayAccess
     /**
      * Gets displayValues
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\LanguageType[]
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\LanguageType[]
      */
     public function getDisplayValues()
     {
@@ -217,7 +217,7 @@ class Languages implements ModelInterface, ArrayAccess
     /**
      * Sets displayValues
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\LanguageType[] $displayValues displayValues
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\LanguageType[] $displayValues displayValues
      *
      * @return $this
      */

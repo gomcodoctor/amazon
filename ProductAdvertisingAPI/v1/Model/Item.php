@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * Item Class Doc Comment
@@ -45,13 +45,13 @@ class Item implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'aSIN' => 'string',
-        'browseNodeInfo' => '\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodeInfo',
+        'browseNodeInfo' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodeInfo',
         'detailPageURL' => 'string',
-        'images' => '\Amazon\ProductAdvertisingAPI\v1\Model\Images',
-        'itemInfo' => '\Amazon\ProductAdvertisingAPI\v1\Model\ItemInfo',
-        'offers' => '\Amazon\ProductAdvertisingAPI\v1\Model\Offers',
+        'images' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Images',
+        'itemInfo' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ItemInfo',
+        'offers' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Offers',
         'score' => 'float',
-        'variationAttributes' => '\Amazon\ProductAdvertisingAPI\v1\Model\VariationAttribute[]'
+        'variationAttributes' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\VariationAttribute[]'
     ];
 
     /**
@@ -261,7 +261,7 @@ class Item implements ModelInterface, ArrayAccess
     /**
      * Gets browseNodeInfo
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodeInfo
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodeInfo
      */
     public function getBrowseNodeInfo()
     {
@@ -271,7 +271,7 @@ class Item implements ModelInterface, ArrayAccess
     /**
      * Sets browseNodeInfo
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodeInfo $browseNodeInfo browseNodeInfo
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodeInfo $browseNodeInfo browseNodeInfo
      *
      * @return $this
      */
@@ -309,7 +309,7 @@ class Item implements ModelInterface, ArrayAccess
     /**
      * Gets images
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\Images
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Images
      */
     public function getImages()
     {
@@ -319,7 +319,7 @@ class Item implements ModelInterface, ArrayAccess
     /**
      * Sets images
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\Images $images images
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Images $images images
      *
      * @return $this
      */
@@ -333,7 +333,7 @@ class Item implements ModelInterface, ArrayAccess
     /**
      * Gets itemInfo
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\ItemInfo
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ItemInfo
      */
     public function getItemInfo()
     {
@@ -343,7 +343,7 @@ class Item implements ModelInterface, ArrayAccess
     /**
      * Sets itemInfo
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\ItemInfo $itemInfo itemInfo
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ItemInfo $itemInfo itemInfo
      *
      * @return $this
      */
@@ -357,7 +357,7 @@ class Item implements ModelInterface, ArrayAccess
     /**
      * Gets offers
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\Offers
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Offers
      */
     public function getOffers()
     {
@@ -367,7 +367,7 @@ class Item implements ModelInterface, ArrayAccess
     /**
      * Sets offers
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\Offers $offers offers
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Offers $offers offers
      *
      * @return $this
      */
@@ -405,7 +405,7 @@ class Item implements ModelInterface, ArrayAccess
     /**
      * Gets variationAttributes
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\VariationAttribute[]
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\VariationAttribute[]
      */
     public function getVariationAttributes()
     {
@@ -415,7 +415,7 @@ class Item implements ModelInterface, ArrayAccess
     /**
      * Sets variationAttributes
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\VariationAttribute[] $variationAttributes variationAttributes
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\VariationAttribute[] $variationAttributes variationAttributes
      *
      * @return $this
      */

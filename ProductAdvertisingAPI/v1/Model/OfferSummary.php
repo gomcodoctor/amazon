@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * OfferSummary Class Doc Comment
@@ -44,9 +44,9 @@ class OfferSummary implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'condition' => '\Amazon\ProductAdvertisingAPI\v1\Model\OfferCondition',
-        'highestPrice' => '\Amazon\ProductAdvertisingAPI\v1\Model\OfferPrice',
-        'lowestPrice' => '\Amazon\ProductAdvertisingAPI\v1\Model\OfferPrice',
+        'condition' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferCondition',
+        'highestPrice' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferPrice',
+        'lowestPrice' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferPrice',
         'offerCount' => 'int'
     ];
 
@@ -213,7 +213,7 @@ class OfferSummary implements ModelInterface, ArrayAccess
     /**
      * Gets condition
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\OfferCondition
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferCondition
      */
     public function getCondition()
     {
@@ -223,7 +223,7 @@ class OfferSummary implements ModelInterface, ArrayAccess
     /**
      * Sets condition
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\OfferCondition $condition condition
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferCondition $condition condition
      *
      * @return $this
      */
@@ -237,7 +237,7 @@ class OfferSummary implements ModelInterface, ArrayAccess
     /**
      * Gets highestPrice
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\OfferPrice
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferPrice
      */
     public function getHighestPrice()
     {
@@ -247,7 +247,7 @@ class OfferSummary implements ModelInterface, ArrayAccess
     /**
      * Sets highestPrice
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\OfferPrice $highestPrice highestPrice
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferPrice $highestPrice highestPrice
      *
      * @return $this
      */
@@ -261,7 +261,7 @@ class OfferSummary implements ModelInterface, ArrayAccess
     /**
      * Gets lowestPrice
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\OfferPrice
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferPrice
      */
     public function getLowestPrice()
     {
@@ -271,7 +271,7 @@ class OfferSummary implements ModelInterface, ArrayAccess
     /**
      * Sets lowestPrice
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\OfferPrice $lowestPrice lowestPrice
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferPrice $lowestPrice lowestPrice
      *
      * @return $this
      */

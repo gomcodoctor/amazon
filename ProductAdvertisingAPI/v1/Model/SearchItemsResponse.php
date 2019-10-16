@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * SearchItemsResponse Class Doc Comment
@@ -44,8 +44,8 @@ class SearchItemsResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'searchResult' => '\Amazon\ProductAdvertisingAPI\v1\Model\SearchResult',
-        'errors' => '\Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[]'
+        'searchResult' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SearchResult',
+        'errors' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[]'
     ];
 
     /**
@@ -201,7 +201,7 @@ class SearchItemsResponse implements ModelInterface, ArrayAccess
     /**
      * Gets searchResult
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\SearchResult
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SearchResult
      */
     public function getSearchResult()
     {
@@ -211,7 +211,7 @@ class SearchItemsResponse implements ModelInterface, ArrayAccess
     /**
      * Sets searchResult
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\SearchResult $searchResult searchResult
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SearchResult $searchResult searchResult
      *
      * @return $this
      */
@@ -225,7 +225,7 @@ class SearchItemsResponse implements ModelInterface, ArrayAccess
     /**
      * Gets errors
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[]
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[]
      */
     public function getErrors()
     {
@@ -235,7 +235,7 @@ class SearchItemsResponse implements ModelInterface, ArrayAccess
     /**
      * Sets errors
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[] $errors errors
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[] $errors errors
      *
      * @return $this
      */

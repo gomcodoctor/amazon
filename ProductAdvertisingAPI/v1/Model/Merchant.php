@@ -16,7 +16,7 @@
  */
  
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * Merchant Class Doc Comment

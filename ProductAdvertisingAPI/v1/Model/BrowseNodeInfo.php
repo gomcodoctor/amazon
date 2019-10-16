@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * BrowseNodeInfo Class Doc Comment
@@ -44,8 +44,8 @@ class BrowseNodeInfo implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'browseNodes' => '\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNode[]',
-        'websiteSalesRank' => '\Amazon\ProductAdvertisingAPI\v1\Model\WebsiteSalesRank'
+        'browseNodes' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNode[]',
+        'websiteSalesRank' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\WebsiteSalesRank'
     ];
 
     /**
@@ -201,7 +201,7 @@ class BrowseNodeInfo implements ModelInterface, ArrayAccess
     /**
      * Gets browseNodes
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\BrowseNode[]
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNode[]
      */
     public function getBrowseNodes()
     {
@@ -211,7 +211,7 @@ class BrowseNodeInfo implements ModelInterface, ArrayAccess
     /**
      * Sets browseNodes
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\BrowseNode[] $browseNodes browseNodes
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNode[] $browseNodes browseNodes
      *
      * @return $this
      */
@@ -225,7 +225,7 @@ class BrowseNodeInfo implements ModelInterface, ArrayAccess
     /**
      * Gets websiteSalesRank
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\WebsiteSalesRank
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\WebsiteSalesRank
      */
     public function getWebsiteSalesRank()
     {
@@ -235,7 +235,7 @@ class BrowseNodeInfo implements ModelInterface, ArrayAccess
     /**
      * Sets websiteSalesRank
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\WebsiteSalesRank $websiteSalesRank websiteSalesRank
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\WebsiteSalesRank $websiteSalesRank websiteSalesRank
      *
      * @return $this
      */

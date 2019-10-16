@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * ProductInfo Class Doc Comment
@@ -44,12 +44,12 @@ class ProductInfo implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'color' => '\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute',
-        'isAdultProduct' => '\Amazon\ProductAdvertisingAPI\v1\Model\SingleBooleanValuedAttribute',
-        'itemDimensions' => '\Amazon\ProductAdvertisingAPI\v1\Model\DimensionBasedAttribute',
-        'releaseDate' => '\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute',
-        'size' => '\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute',
-        'unitCount' => '\Amazon\ProductAdvertisingAPI\v1\Model\SingleIntegerValuedAttribute'
+        'color' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute',
+        'isAdultProduct' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleBooleanValuedAttribute',
+        'itemDimensions' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\DimensionBasedAttribute',
+        'releaseDate' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute',
+        'size' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute',
+        'unitCount' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleIntegerValuedAttribute'
     ];
 
     /**
@@ -225,7 +225,7 @@ class ProductInfo implements ModelInterface, ArrayAccess
     /**
      * Gets color
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute
      */
     public function getColor()
     {
@@ -235,7 +235,7 @@ class ProductInfo implements ModelInterface, ArrayAccess
     /**
      * Sets color
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute $color color
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute $color color
      *
      * @return $this
      */
@@ -249,7 +249,7 @@ class ProductInfo implements ModelInterface, ArrayAccess
     /**
      * Gets isAdultProduct
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\SingleBooleanValuedAttribute
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleBooleanValuedAttribute
      */
     public function getIsAdultProduct()
     {
@@ -259,7 +259,7 @@ class ProductInfo implements ModelInterface, ArrayAccess
     /**
      * Sets isAdultProduct
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\SingleBooleanValuedAttribute $isAdultProduct isAdultProduct
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleBooleanValuedAttribute $isAdultProduct isAdultProduct
      *
      * @return $this
      */
@@ -273,7 +273,7 @@ class ProductInfo implements ModelInterface, ArrayAccess
     /**
      * Gets itemDimensions
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\DimensionBasedAttribute
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\DimensionBasedAttribute
      */
     public function getItemDimensions()
     {
@@ -283,7 +283,7 @@ class ProductInfo implements ModelInterface, ArrayAccess
     /**
      * Sets itemDimensions
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\DimensionBasedAttribute $itemDimensions itemDimensions
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\DimensionBasedAttribute $itemDimensions itemDimensions
      *
      * @return $this
      */
@@ -297,7 +297,7 @@ class ProductInfo implements ModelInterface, ArrayAccess
     /**
      * Gets releaseDate
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute
      */
     public function getReleaseDate()
     {
@@ -307,7 +307,7 @@ class ProductInfo implements ModelInterface, ArrayAccess
     /**
      * Sets releaseDate
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute $releaseDate releaseDate
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute $releaseDate releaseDate
      *
      * @return $this
      */
@@ -321,7 +321,7 @@ class ProductInfo implements ModelInterface, ArrayAccess
     /**
      * Gets size
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute
      */
     public function getSize()
     {
@@ -331,7 +331,7 @@ class ProductInfo implements ModelInterface, ArrayAccess
     /**
      * Sets size
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute $size size
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute $size size
      *
      * @return $this
      */
@@ -345,7 +345,7 @@ class ProductInfo implements ModelInterface, ArrayAccess
     /**
      * Gets unitCount
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\SingleIntegerValuedAttribute
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleIntegerValuedAttribute
      */
     public function getUnitCount()
     {
@@ -355,7 +355,7 @@ class ProductInfo implements ModelInterface, ArrayAccess
     /**
      * Sets unitCount
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\SingleIntegerValuedAttribute $unitCount unitCount
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleIntegerValuedAttribute $unitCount unitCount
      *
      * @return $this
      */

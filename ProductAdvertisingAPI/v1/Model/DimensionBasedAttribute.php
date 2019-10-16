@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * DimensionBasedAttribute Class Doc Comment
@@ -44,10 +44,10 @@ class DimensionBasedAttribute implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'height' => '\Amazon\ProductAdvertisingAPI\v1\Model\UnitBasedAttribute',
-        'length' => '\Amazon\ProductAdvertisingAPI\v1\Model\UnitBasedAttribute',
-        'weight' => '\Amazon\ProductAdvertisingAPI\v1\Model\UnitBasedAttribute',
-        'width' => '\Amazon\ProductAdvertisingAPI\v1\Model\UnitBasedAttribute'
+        'height' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\UnitBasedAttribute',
+        'length' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\UnitBasedAttribute',
+        'weight' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\UnitBasedAttribute',
+        'width' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\UnitBasedAttribute'
     ];
 
     /**
@@ -213,7 +213,7 @@ class DimensionBasedAttribute implements ModelInterface, ArrayAccess
     /**
      * Gets height
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\UnitBasedAttribute
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\UnitBasedAttribute
      */
     public function getHeight()
     {
@@ -223,7 +223,7 @@ class DimensionBasedAttribute implements ModelInterface, ArrayAccess
     /**
      * Sets height
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\UnitBasedAttribute $height height
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\UnitBasedAttribute $height height
      *
      * @return $this
      */
@@ -237,7 +237,7 @@ class DimensionBasedAttribute implements ModelInterface, ArrayAccess
     /**
      * Gets length
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\UnitBasedAttribute
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\UnitBasedAttribute
      */
     public function getLength()
     {
@@ -247,7 +247,7 @@ class DimensionBasedAttribute implements ModelInterface, ArrayAccess
     /**
      * Sets length
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\UnitBasedAttribute $length length
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\UnitBasedAttribute $length length
      *
      * @return $this
      */
@@ -261,7 +261,7 @@ class DimensionBasedAttribute implements ModelInterface, ArrayAccess
     /**
      * Gets weight
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\UnitBasedAttribute
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\UnitBasedAttribute
      */
     public function getWeight()
     {
@@ -271,7 +271,7 @@ class DimensionBasedAttribute implements ModelInterface, ArrayAccess
     /**
      * Sets weight
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\UnitBasedAttribute $weight weight
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\UnitBasedAttribute $weight weight
      *
      * @return $this
      */
@@ -285,7 +285,7 @@ class DimensionBasedAttribute implements ModelInterface, ArrayAccess
     /**
      * Gets width
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\UnitBasedAttribute
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\UnitBasedAttribute
      */
     public function getWidth()
     {
@@ -295,7 +295,7 @@ class DimensionBasedAttribute implements ModelInterface, ArrayAccess
     /**
      * Sets width
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\UnitBasedAttribute $width width
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\UnitBasedAttribute $width width
      *
      * @return $this
      */

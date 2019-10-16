@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * ManufactureInfo Class Doc Comment
@@ -44,9 +44,9 @@ class ManufactureInfo implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'itemPartNumber' => '\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute',
-        'model' => '\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute',
-        'warranty' => '\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute'
+        'itemPartNumber' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute',
+        'model' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute',
+        'warranty' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute'
     ];
 
     /**
@@ -207,7 +207,7 @@ class ManufactureInfo implements ModelInterface, ArrayAccess
     /**
      * Gets itemPartNumber
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute
      */
     public function getItemPartNumber()
     {
@@ -217,7 +217,7 @@ class ManufactureInfo implements ModelInterface, ArrayAccess
     /**
      * Sets itemPartNumber
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute $itemPartNumber itemPartNumber
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute $itemPartNumber itemPartNumber
      *
      * @return $this
      */
@@ -231,7 +231,7 @@ class ManufactureInfo implements ModelInterface, ArrayAccess
     /**
      * Gets model
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute
      */
     public function getModel()
     {
@@ -241,7 +241,7 @@ class ManufactureInfo implements ModelInterface, ArrayAccess
     /**
      * Sets model
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute $model model
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute $model model
      *
      * @return $this
      */
@@ -255,7 +255,7 @@ class ManufactureInfo implements ModelInterface, ArrayAccess
     /**
      * Gets warranty
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute
      */
     public function getWarranty()
     {
@@ -265,7 +265,7 @@ class ManufactureInfo implements ModelInterface, ArrayAccess
     /**
      * Sets warranty
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute $warranty warranty
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute $warranty warranty
      *
      * @return $this
      */

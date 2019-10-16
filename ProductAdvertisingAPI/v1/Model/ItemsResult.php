@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * ItemsResult Class Doc Comment
@@ -44,7 +44,7 @@ class ItemsResult implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'items' => '\Amazon\ProductAdvertisingAPI\v1\Model\Item[]'
+        'items' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Item[]'
     ];
 
     /**
@@ -195,7 +195,7 @@ class ItemsResult implements ModelInterface, ArrayAccess
     /**
      * Gets items
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\Item[]
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Item[]
      */
     public function getItems()
     {
@@ -205,7 +205,7 @@ class ItemsResult implements ModelInterface, ArrayAccess
     /**
      * Sets items
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\Item[] $items items
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Item[] $items items
      *
      * @return $this
      */

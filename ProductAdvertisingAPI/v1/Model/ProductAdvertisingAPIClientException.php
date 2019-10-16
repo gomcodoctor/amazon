@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * ProductAdvertisingAPIClientException Class Doc Comment
@@ -44,7 +44,7 @@ class ProductAdvertisingAPIClientException implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'errors' => '\Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[]'
+        'errors' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[]'
     ];
 
     /**
@@ -195,7 +195,7 @@ class ProductAdvertisingAPIClientException implements ModelInterface, ArrayAcces
     /**
      * Gets errors
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[]
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[]
      */
     public function getErrors()
     {
@@ -205,7 +205,7 @@ class ProductAdvertisingAPIClientException implements ModelInterface, ArrayAcces
     /**
      * Sets errors
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[] $errors errors
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[] $errors errors
      *
      * @return $this
      */

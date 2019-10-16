@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * VariationSummary Class Doc Comment
@@ -45,9 +45,9 @@ class VariationSummary implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'pageCount' => 'int',
-        'price' => '\Amazon\ProductAdvertisingAPI\v1\Model\Price',
+        'price' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Price',
         'variationCount' => 'int',
-        'variationDimensions' => '\Amazon\ProductAdvertisingAPI\v1\Model\VariationDimension[]'
+        'variationDimensions' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\VariationDimension[]'
     ];
 
     /**
@@ -237,7 +237,7 @@ class VariationSummary implements ModelInterface, ArrayAccess
     /**
      * Gets price
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\Price
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Price
      */
     public function getPrice()
     {
@@ -247,7 +247,7 @@ class VariationSummary implements ModelInterface, ArrayAccess
     /**
      * Sets price
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\Price $price price
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Price $price price
      *
      * @return $this
      */
@@ -285,7 +285,7 @@ class VariationSummary implements ModelInterface, ArrayAccess
     /**
      * Gets variationDimensions
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\VariationDimension[]
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\VariationDimension[]
      */
     public function getVariationDimensions()
     {
@@ -295,7 +295,7 @@ class VariationSummary implements ModelInterface, ArrayAccess
     /**
      * Sets variationDimensions
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\VariationDimension[] $variationDimensions variationDimensions
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\VariationDimension[] $variationDimensions variationDimensions
      *
      * @return $this
      */

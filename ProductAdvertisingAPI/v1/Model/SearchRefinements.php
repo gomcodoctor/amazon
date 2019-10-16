@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * SearchRefinements Class Doc Comment
@@ -44,9 +44,9 @@ class SearchRefinements implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'browseNode' => '\Amazon\ProductAdvertisingAPI\v1\Model\Refinement',
-        'otherRefinements' => '\Amazon\ProductAdvertisingAPI\v1\Model\Refinement[]',
-        'searchIndex' => '\Amazon\ProductAdvertisingAPI\v1\Model\Refinement'
+        'browseNode' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Refinement',
+        'otherRefinements' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Refinement[]',
+        'searchIndex' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Refinement'
     ];
 
     /**
@@ -207,7 +207,7 @@ class SearchRefinements implements ModelInterface, ArrayAccess
     /**
      * Gets browseNode
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\Refinement
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Refinement
      */
     public function getBrowseNode()
     {
@@ -217,7 +217,7 @@ class SearchRefinements implements ModelInterface, ArrayAccess
     /**
      * Sets browseNode
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\Refinement $browseNode browseNode
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Refinement $browseNode browseNode
      *
      * @return $this
      */
@@ -231,7 +231,7 @@ class SearchRefinements implements ModelInterface, ArrayAccess
     /**
      * Gets otherRefinements
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\Refinement[]
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Refinement[]
      */
     public function getOtherRefinements()
     {
@@ -241,7 +241,7 @@ class SearchRefinements implements ModelInterface, ArrayAccess
     /**
      * Sets otherRefinements
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\Refinement[] $otherRefinements otherRefinements
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Refinement[] $otherRefinements otherRefinements
      *
      * @return $this
      */
@@ -255,7 +255,7 @@ class SearchRefinements implements ModelInterface, ArrayAccess
     /**
      * Gets searchIndex
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\Refinement
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Refinement
      */
     public function getSearchIndex()
     {
@@ -265,7 +265,7 @@ class SearchRefinements implements ModelInterface, ArrayAccess
     /**
      * Sets searchIndex
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\Refinement $searchIndex searchIndex
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Refinement $searchIndex searchIndex
      *
      * @return $this
      */

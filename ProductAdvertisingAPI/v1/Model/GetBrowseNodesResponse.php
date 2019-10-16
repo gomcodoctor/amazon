@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * GetBrowseNodesResponse Class Doc Comment
@@ -44,8 +44,8 @@ class GetBrowseNodesResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'browseNodesResult' => '\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodesResult',
-        'errors' => '\Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[]'
+        'browseNodesResult' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodesResult',
+        'errors' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[]'
     ];
 
     /**
@@ -201,7 +201,7 @@ class GetBrowseNodesResponse implements ModelInterface, ArrayAccess
     /**
      * Gets browseNodesResult
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodesResult
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodesResult
      */
     public function getBrowseNodesResult()
     {
@@ -211,7 +211,7 @@ class GetBrowseNodesResponse implements ModelInterface, ArrayAccess
     /**
      * Sets browseNodesResult
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodesResult $browseNodesResult browseNodesResult
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodesResult $browseNodesResult browseNodesResult
      *
      * @return $this
      */
@@ -225,7 +225,7 @@ class GetBrowseNodesResponse implements ModelInterface, ArrayAccess
     /**
      * Gets errors
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[]
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[]
      */
     public function getErrors()
     {
@@ -235,7 +235,7 @@ class GetBrowseNodesResponse implements ModelInterface, ArrayAccess
     /**
      * Sets errors
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[] $errors errors
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[] $errors errors
      *
      * @return $this
      */

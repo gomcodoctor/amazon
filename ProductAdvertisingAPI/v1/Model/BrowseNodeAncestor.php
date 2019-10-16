@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * BrowseNodeAncestor Class Doc Comment
@@ -44,7 +44,7 @@ class BrowseNodeAncestor implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'ancestor' => '\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodeAncestor',
+        'ancestor' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodeAncestor',
         'contextFreeName' => 'string',
         'displayName' => 'string',
         'id' => 'string'
@@ -213,7 +213,7 @@ class BrowseNodeAncestor implements ModelInterface, ArrayAccess
     /**
      * Gets ancestor
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodeAncestor
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodeAncestor
      */
     public function getAncestor()
     {
@@ -223,7 +223,7 @@ class BrowseNodeAncestor implements ModelInterface, ArrayAccess
     /**
      * Sets ancestor
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodeAncestor $ancestor ancestor
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodeAncestor $ancestor ancestor
      *
      * @return $this
      */

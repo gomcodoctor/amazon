@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * SearchResult Class Doc Comment
@@ -46,8 +46,8 @@ class SearchResult implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'totalResultCount' => 'int',
         'searchURL' => 'string',
-        'items' => '\Amazon\ProductAdvertisingAPI\v1\Model\Item[]',
-        'searchRefinements' => '\Amazon\ProductAdvertisingAPI\v1\Model\SearchRefinements'
+        'items' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Item[]',
+        'searchRefinements' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SearchRefinements'
     ];
 
     /**
@@ -261,7 +261,7 @@ class SearchResult implements ModelInterface, ArrayAccess
     /**
      * Gets items
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\Item[]
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Item[]
      */
     public function getItems()
     {
@@ -271,7 +271,7 @@ class SearchResult implements ModelInterface, ArrayAccess
     /**
      * Sets items
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\Item[] $items items
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Item[] $items items
      *
      * @return $this
      */
@@ -285,7 +285,7 @@ class SearchResult implements ModelInterface, ArrayAccess
     /**
      * Gets searchRefinements
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\SearchRefinements
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SearchRefinements
      */
     public function getSearchRefinements()
     {
@@ -295,7 +295,7 @@ class SearchResult implements ModelInterface, ArrayAccess
     /**
      * Sets searchRefinements
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\SearchRefinements $searchRefinements searchRefinements
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SearchRefinements $searchRefinements searchRefinements
      *
      * @return $this
      */

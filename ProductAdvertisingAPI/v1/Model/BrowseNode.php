@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * BrowseNode Class Doc Comment
@@ -44,8 +44,8 @@ class BrowseNode implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'ancestor' => '\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodeAncestor',
-        'children' => '\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodeChildren',
+        'ancestor' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodeAncestor',
+        'children' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodeChildren',
         'contextFreeName' => 'string',
         'displayName' => 'string',
         'id' => 'string',
@@ -231,7 +231,7 @@ class BrowseNode implements ModelInterface, ArrayAccess
     /**
      * Gets ancestor
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodeAncestor
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodeAncestor
      */
     public function getAncestor()
     {
@@ -241,7 +241,7 @@ class BrowseNode implements ModelInterface, ArrayAccess
     /**
      * Sets ancestor
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodeAncestor $ancestor ancestor
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodeAncestor $ancestor ancestor
      *
      * @return $this
      */
@@ -255,7 +255,7 @@ class BrowseNode implements ModelInterface, ArrayAccess
     /**
      * Gets children
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodeChildren
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodeChildren
      */
     public function getChildren()
     {
@@ -265,7 +265,7 @@ class BrowseNode implements ModelInterface, ArrayAccess
     /**
      * Sets children
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodeChildren $children children
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\BrowseNodeChildren $children children
      *
      * @return $this
      */

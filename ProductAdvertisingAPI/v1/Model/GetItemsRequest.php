@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * GetItemsRequest Class Doc Comment
@@ -44,16 +44,16 @@ class GetItemsRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'condition' => '\Amazon\ProductAdvertisingAPI\v1\Model\Condition',
+        'condition' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Condition',
         'itemIds' => 'string[]',
-        'itemIdType' => '\Amazon\ProductAdvertisingAPI\v1\Model\ItemIdType',
+        'itemIdType' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ItemIdType',
         'languagesOfPreference' => 'string[]',
         'marketplace' => 'string',
-        'merchant' => '\Amazon\ProductAdvertisingAPI\v1\Model\Merchant',
-        'offerCount' => '\Amazon\ProductAdvertisingAPI\v1\Model\OfferCount',
+        'merchant' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Merchant',
+        'offerCount' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferCount',
         'partnerTag' => 'string',
-        'partnerType' => '\Amazon\ProductAdvertisingAPI\v1\Model\PartnerType',
-        'resources' => '\Amazon\ProductAdvertisingAPI\v1\Model\GetItemsResource[]'
+        'partnerType' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\PartnerType',
+        'resources' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetItemsResource[]'
     ];
 
     /**
@@ -267,7 +267,7 @@ class GetItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets condition
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\Condition
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Condition
      */
     public function getCondition()
     {
@@ -277,7 +277,7 @@ class GetItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets condition
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\Condition $condition condition
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Condition $condition condition
      *
      * @return $this
      */
@@ -315,7 +315,7 @@ class GetItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets itemIdType
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\ItemIdType
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ItemIdType
      */
     public function getItemIdType()
     {
@@ -325,7 +325,7 @@ class GetItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets itemIdType
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\ItemIdType $itemIdType itemIdType
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ItemIdType $itemIdType itemIdType
      *
      * @return $this
      */
@@ -387,7 +387,7 @@ class GetItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets merchant
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\Merchant
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Merchant
      */
     public function getMerchant()
     {
@@ -397,7 +397,7 @@ class GetItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets merchant
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\Merchant $merchant merchant
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Merchant $merchant merchant
      *
      * @return $this
      */
@@ -411,7 +411,7 @@ class GetItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets offerCount
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\OfferCount
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferCount
      */
     public function getOfferCount()
     {
@@ -421,7 +421,7 @@ class GetItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets offerCount
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\OfferCount $offerCount offerCount
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferCount $offerCount offerCount
      *
      * @return $this
      */
@@ -459,7 +459,7 @@ class GetItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets partnerType
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\PartnerType
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\PartnerType
      */
     public function getPartnerType()
     {
@@ -469,7 +469,7 @@ class GetItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets partnerType
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\PartnerType $partnerType partnerType
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\PartnerType $partnerType partnerType
      *
      * @return $this
      */
@@ -483,7 +483,7 @@ class GetItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets resources
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\GetItemsResource[]
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetItemsResource[]
      */
     public function getResources()
     {
@@ -493,7 +493,7 @@ class GetItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets resources
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\GetItemsResource[] $resources resources
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetItemsResource[] $resources resources
      *
      * @return $this
      */

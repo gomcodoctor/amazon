@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * GetVariationsRequest Class Doc Comment
@@ -45,14 +45,14 @@ class GetVariationsRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'aSIN' => 'string',
-        'condition' => '\Amazon\ProductAdvertisingAPI\v1\Model\Condition',
+        'condition' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Condition',
         'languagesOfPreference' => 'string[]',
         'marketplace' => 'string',
-        'merchant' => '\Amazon\ProductAdvertisingAPI\v1\Model\Merchant',
-        'offerCount' => '\Amazon\ProductAdvertisingAPI\v1\Model\OfferCount',
+        'merchant' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Merchant',
+        'offerCount' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferCount',
         'partnerTag' => 'string',
-        'partnerType' => '\Amazon\ProductAdvertisingAPI\v1\Model\PartnerType',
-        'resources' => '\Amazon\ProductAdvertisingAPI\v1\Model\GetVariationsResource[]',
+        'partnerType' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\PartnerType',
+        'resources' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetVariationsResource[]',
         'variationCount' => 'int',
         'variationPage' => 'int'
     ];
@@ -297,7 +297,7 @@ class GetVariationsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets condition
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\Condition
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Condition
      */
     public function getCondition()
     {
@@ -307,7 +307,7 @@ class GetVariationsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets condition
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\Condition $condition condition
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Condition $condition condition
      *
      * @return $this
      */
@@ -369,7 +369,7 @@ class GetVariationsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets merchant
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\Merchant
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Merchant
      */
     public function getMerchant()
     {
@@ -379,7 +379,7 @@ class GetVariationsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets merchant
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\Merchant $merchant merchant
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Merchant $merchant merchant
      *
      * @return $this
      */
@@ -393,7 +393,7 @@ class GetVariationsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets offerCount
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\OfferCount
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferCount
      */
     public function getOfferCount()
     {
@@ -403,7 +403,7 @@ class GetVariationsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets offerCount
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\OfferCount $offerCount offerCount
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferCount $offerCount offerCount
      *
      * @return $this
      */
@@ -441,7 +441,7 @@ class GetVariationsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets partnerType
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\PartnerType
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\PartnerType
      */
     public function getPartnerType()
     {
@@ -451,7 +451,7 @@ class GetVariationsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets partnerType
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\PartnerType $partnerType partnerType
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\PartnerType $partnerType partnerType
      *
      * @return $this
      */
@@ -465,7 +465,7 @@ class GetVariationsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets resources
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\GetVariationsResource[]
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetVariationsResource[]
      */
     public function getResources()
     {
@@ -475,7 +475,7 @@ class GetVariationsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets resources
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\GetVariationsResource[] $resources resources
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetVariationsResource[] $resources resources
      *
      * @return $this
      */

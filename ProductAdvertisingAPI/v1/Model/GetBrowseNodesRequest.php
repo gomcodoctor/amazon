@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * GetBrowseNodesRequest Class Doc Comment
@@ -48,8 +48,8 @@ class GetBrowseNodesRequest implements ModelInterface, ArrayAccess
         'languagesOfPreference' => 'string[]',
         'marketplace' => 'string',
         'partnerTag' => 'string',
-        'partnerType' => '\Amazon\ProductAdvertisingAPI\v1\Model\PartnerType',
-        'resources' => '\Amazon\ProductAdvertisingAPI\v1\Model\GetBrowseNodesResource[]'
+        'partnerType' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\PartnerType',
+        'resources' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetBrowseNodesResource[]'
     ];
 
     /**
@@ -339,7 +339,7 @@ class GetBrowseNodesRequest implements ModelInterface, ArrayAccess
     /**
      * Gets partnerType
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\PartnerType
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\PartnerType
      */
     public function getPartnerType()
     {
@@ -349,7 +349,7 @@ class GetBrowseNodesRequest implements ModelInterface, ArrayAccess
     /**
      * Sets partnerType
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\PartnerType $partnerType partnerType
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\PartnerType $partnerType partnerType
      *
      * @return $this
      */
@@ -363,7 +363,7 @@ class GetBrowseNodesRequest implements ModelInterface, ArrayAccess
     /**
      * Gets resources
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\GetBrowseNodesResource[]
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetBrowseNodesResource[]
      */
     public function getResources()
     {
@@ -373,7 +373,7 @@ class GetBrowseNodesRequest implements ModelInterface, ArrayAccess
     /**
      * Sets resources
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\GetBrowseNodesResource[] $resources resources
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetBrowseNodesResource[] $resources resources
      *
      * @return $this
      */

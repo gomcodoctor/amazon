@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * Classifications Class Doc Comment
@@ -44,8 +44,8 @@ class Classifications implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'binding' => '\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute',
-        'productGroup' => '\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute'
+        'binding' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute',
+        'productGroup' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute'
     ];
 
     /**
@@ -201,7 +201,7 @@ class Classifications implements ModelInterface, ArrayAccess
     /**
      * Gets binding
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute
      */
     public function getBinding()
     {
@@ -211,7 +211,7 @@ class Classifications implements ModelInterface, ArrayAccess
     /**
      * Sets binding
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute $binding binding
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute $binding binding
      *
      * @return $this
      */
@@ -225,7 +225,7 @@ class Classifications implements ModelInterface, ArrayAccess
     /**
      * Gets productGroup
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute
      */
     public function getProductGroup()
     {
@@ -235,7 +235,7 @@ class Classifications implements ModelInterface, ArrayAccess
     /**
      * Sets productGroup
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute $productGroup productGroup
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SingleStringValuedAttribute $productGroup productGroup
      *
      * @return $this
      */

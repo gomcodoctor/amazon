@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * OfferPrice Class Doc Comment
@@ -48,7 +48,7 @@ class OfferPrice implements ModelInterface, ArrayAccess
         'currency' => 'string',
         'displayAmount' => 'string',
         'pricePerUnit' => 'float',
-        'savings' => '\Amazon\ProductAdvertisingAPI\v1\Model\OfferSavings'
+        'savings' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferSavings'
     ];
 
     /**
@@ -315,7 +315,7 @@ class OfferPrice implements ModelInterface, ArrayAccess
     /**
      * Gets savings
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\OfferSavings
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferSavings
      */
     public function getSavings()
     {
@@ -325,7 +325,7 @@ class OfferPrice implements ModelInterface, ArrayAccess
     /**
      * Sets savings
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\OfferSavings $savings savings
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferSavings $savings savings
      *
      * @return $this
      */

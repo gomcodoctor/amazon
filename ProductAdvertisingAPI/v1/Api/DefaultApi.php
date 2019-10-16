@@ -22,11 +22,11 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Amazon\ProductAdvertisingAPI\v1\ApiException;
-use Amazon\ProductAdvertisingAPI\v1\Configuration;
-use Amazon\ProductAdvertisingAPI\v1\HeaderSelector;
-use Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
-use Amazon\ProductAdvertisingAPI\v1\SignHelper;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ApiException;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Configuration;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\HeaderSelector;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\SignHelper;
 
 /**
  * DefaultApi Class Doc Comment
@@ -73,11 +73,11 @@ class DefaultApi
     /**
      * Operation getBrowseNodes
      *
-     * @param  \Amazon\ProductAdvertisingAPI\v1\Model\GetBrowseNodesRequest $getBrowseNodesRequest GetBrowseNodesRequest (required)
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetBrowseNodesRequest $getBrowseNodesRequest GetBrowseNodesRequest (required)
      *
-     * @throws \Amazon\ProductAdvertisingAPI\v1\ApiException on non-2xx response
+     * @throws \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\GetBrowseNodesResponse
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetBrowseNodesResponse
      */
     public function getBrowseNodes($getBrowseNodesRequest)
     {
@@ -88,15 +88,15 @@ class DefaultApi
     /**
      * Operation getBrowseNodesWithHttpInfo
      *
-     * @param  \Amazon\ProductAdvertisingAPI\v1\Model\GetBrowseNodesRequest $getBrowseNodesRequest GetBrowseNodesRequest (required)
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetBrowseNodesRequest $getBrowseNodesRequest GetBrowseNodesRequest (required)
      *
-     * @throws \Amazon\ProductAdvertisingAPI\v1\ApiException on non-2xx response
+     * @throws \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Amazon\ProductAdvertisingAPI\v1\Model\GetBrowseNodesResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetBrowseNodesResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getBrowseNodesWithHttpInfo($getBrowseNodesRequest)
     {
-        $returnType = '\Amazon\ProductAdvertisingAPI\v1\Model\GetBrowseNodesResponse';
+        $returnType = '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetBrowseNodesResponse';
         $request = $this->getBrowseNodesRequest($getBrowseNodesRequest);
 
         try {
@@ -149,7 +149,7 @@ class DefaultApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $responseBody,
-                        '\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
+                        '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -157,7 +157,7 @@ class DefaultApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $responseBody,
-                        '\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
+                        '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -165,7 +165,7 @@ class DefaultApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $responseBody,
-                        '\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
+                        '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -173,7 +173,7 @@ class DefaultApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $responseBody,
-                        '\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
+                        '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -181,7 +181,7 @@ class DefaultApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $responseBody,
-                        '\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
+                        '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -189,7 +189,7 @@ class DefaultApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $responseBody,
-                        '\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIServiceException',
+                        '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIServiceException',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -204,7 +204,7 @@ class DefaultApi
      *
      * 
      *
-     * @param  \Amazon\ProductAdvertisingAPI\v1\Model\GetBrowseNodesRequest $getBrowseNodesRequest GetBrowseNodesRequest (required)
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetBrowseNodesRequest $getBrowseNodesRequest GetBrowseNodesRequest (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -224,14 +224,14 @@ class DefaultApi
      *
      * 
      *
-     * @param  \Amazon\ProductAdvertisingAPI\v1\Model\GetBrowseNodesRequest $getBrowseNodesRequest GetBrowseNodesRequest (required)
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetBrowseNodesRequest $getBrowseNodesRequest GetBrowseNodesRequest (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function getBrowseNodesAsyncWithHttpInfo($getBrowseNodesRequest)
     {
-        $returnType = '\Amazon\ProductAdvertisingAPI\v1\Model\GetBrowseNodesResponse';
+        $returnType = '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetBrowseNodesResponse';
         $request = $this->getBrowseNodesRequest($getBrowseNodesRequest);
 
         return $this->client
@@ -274,7 +274,7 @@ class DefaultApi
     /**
      * Create request for operation 'getBrowseNodes'
      *
-     * @param  \Amazon\ProductAdvertisingAPI\v1\Model\GetBrowseNodesRequest $getBrowseNodesRequest GetBrowseNodesRequest (required)
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetBrowseNodesRequest $getBrowseNodesRequest GetBrowseNodesRequest (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -370,11 +370,11 @@ class DefaultApi
     /**
      * Operation getItems
      *
-     * @param  \Amazon\ProductAdvertisingAPI\v1\Model\GetItemsRequest $getItemsRequest GetItemsRequest (required)
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetItemsRequest $getItemsRequest GetItemsRequest (required)
      *
-     * @throws \Amazon\ProductAdvertisingAPI\v1\ApiException on non-2xx response
+     * @throws \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\GetItemsResponse
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetItemsResponse
      */
     public function getItems($getItemsRequest)
     {
@@ -385,15 +385,15 @@ class DefaultApi
     /**
      * Operation getItemsWithHttpInfo
      *
-     * @param  \Amazon\ProductAdvertisingAPI\v1\Model\GetItemsRequest $getItemsRequest GetItemsRequest (required)
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetItemsRequest $getItemsRequest GetItemsRequest (required)
      *
-     * @throws \Amazon\ProductAdvertisingAPI\v1\ApiException on non-2xx response
+     * @throws \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Amazon\ProductAdvertisingAPI\v1\Model\GetItemsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetItemsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getItemsWithHttpInfo($getItemsRequest)
     {
-        $returnType = '\Amazon\ProductAdvertisingAPI\v1\Model\GetItemsResponse';
+        $returnType = '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetItemsResponse';
         $request = $this->getItemsRequest($getItemsRequest);
 
         try {
@@ -446,7 +446,7 @@ class DefaultApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $responseBody,
-                        '\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
+                        '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -454,7 +454,7 @@ class DefaultApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $responseBody,
-                        '\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
+                        '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -462,7 +462,7 @@ class DefaultApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $responseBody,
-                        '\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
+                        '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -470,7 +470,7 @@ class DefaultApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $responseBody,
-                        '\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
+                        '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -478,7 +478,7 @@ class DefaultApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $responseBody,
-                        '\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
+                        '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -486,7 +486,7 @@ class DefaultApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $responseBody,
-                        '\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIServiceException',
+                        '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIServiceException',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -501,7 +501,7 @@ class DefaultApi
      *
      * 
      *
-     * @param  \Amazon\ProductAdvertisingAPI\v1\Model\GetItemsRequest $getItemsRequest GetItemsRequest (required)
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetItemsRequest $getItemsRequest GetItemsRequest (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -521,14 +521,14 @@ class DefaultApi
      *
      * 
      *
-     * @param  \Amazon\ProductAdvertisingAPI\v1\Model\GetItemsRequest $getItemsRequest GetItemsRequest (required)
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetItemsRequest $getItemsRequest GetItemsRequest (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function getItemsAsyncWithHttpInfo($getItemsRequest)
     {
-        $returnType = '\Amazon\ProductAdvertisingAPI\v1\Model\GetItemsResponse';
+        $returnType = '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetItemsResponse';
         $request = $this->getItemsRequest($getItemsRequest);
 
         return $this->client
@@ -571,7 +571,7 @@ class DefaultApi
     /**
      * Create request for operation 'getItems'
      *
-     * @param  \Amazon\ProductAdvertisingAPI\v1\Model\GetItemsRequest $getItemsRequest GetItemsRequest (required)
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetItemsRequest $getItemsRequest GetItemsRequest (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -667,11 +667,11 @@ class DefaultApi
     /**
      * Operation getVariations
      *
-     * @param  \Amazon\ProductAdvertisingAPI\v1\Model\GetVariationsRequest $getVariationsRequest GetVariationsRequest (required)
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetVariationsRequest $getVariationsRequest GetVariationsRequest (required)
      *
-     * @throws \Amazon\ProductAdvertisingAPI\v1\ApiException on non-2xx response
+     * @throws \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\GetVariationsResponse
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetVariationsResponse
      */
     public function getVariations($getVariationsRequest)
     {
@@ -682,15 +682,15 @@ class DefaultApi
     /**
      * Operation getVariationsWithHttpInfo
      *
-     * @param  \Amazon\ProductAdvertisingAPI\v1\Model\GetVariationsRequest $getVariationsRequest GetVariationsRequest (required)
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetVariationsRequest $getVariationsRequest GetVariationsRequest (required)
      *
-     * @throws \Amazon\ProductAdvertisingAPI\v1\ApiException on non-2xx response
+     * @throws \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Amazon\ProductAdvertisingAPI\v1\Model\GetVariationsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetVariationsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getVariationsWithHttpInfo($getVariationsRequest)
     {
-        $returnType = '\Amazon\ProductAdvertisingAPI\v1\Model\GetVariationsResponse';
+        $returnType = '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetVariationsResponse';
         $request = $this->getVariationsRequest($getVariationsRequest);
 
         try {
@@ -743,7 +743,7 @@ class DefaultApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $responseBody,
-                        '\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
+                        '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -751,7 +751,7 @@ class DefaultApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $responseBody,
-                        '\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
+                        '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -759,7 +759,7 @@ class DefaultApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $responseBody,
-                        '\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
+                        '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -767,7 +767,7 @@ class DefaultApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $responseBody,
-                        '\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
+                        '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -775,7 +775,7 @@ class DefaultApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $responseBody,
-                        '\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
+                        '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -783,7 +783,7 @@ class DefaultApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $responseBody,
-                        '\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIServiceException',
+                        '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIServiceException',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -798,7 +798,7 @@ class DefaultApi
      *
      * 
      *
-     * @param  \Amazon\ProductAdvertisingAPI\v1\Model\GetVariationsRequest $getVariationsRequest GetVariationsRequest (required)
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetVariationsRequest $getVariationsRequest GetVariationsRequest (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -818,14 +818,14 @@ class DefaultApi
      *
      * 
      *
-     * @param  \Amazon\ProductAdvertisingAPI\v1\Model\GetVariationsRequest $getVariationsRequest GetVariationsRequest (required)
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetVariationsRequest $getVariationsRequest GetVariationsRequest (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function getVariationsAsyncWithHttpInfo($getVariationsRequest)
     {
-        $returnType = '\Amazon\ProductAdvertisingAPI\v1\Model\GetVariationsResponse';
+        $returnType = '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetVariationsResponse';
         $request = $this->getVariationsRequest($getVariationsRequest);
 
         return $this->client
@@ -868,7 +868,7 @@ class DefaultApi
     /**
      * Create request for operation 'getVariations'
      *
-     * @param  \Amazon\ProductAdvertisingAPI\v1\Model\GetVariationsRequest $getVariationsRequest GetVariationsRequest (required)
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\GetVariationsRequest $getVariationsRequest GetVariationsRequest (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -964,11 +964,11 @@ class DefaultApi
     /**
      * Operation searchItems
      *
-     * @param  \Amazon\ProductAdvertisingAPI\v1\Model\SearchItemsRequest $searchItemsRequest SearchItemsRequest (required)
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SearchItemsRequest $searchItemsRequest SearchItemsRequest (required)
      *
-     * @throws \Amazon\ProductAdvertisingAPI\v1\ApiException on non-2xx response
+     * @throws \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\SearchItemsResponse
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SearchItemsResponse
      */
     public function searchItems($searchItemsRequest)
     {
@@ -979,15 +979,15 @@ class DefaultApi
     /**
      * Operation searchItemsWithHttpInfo
      *
-     * @param  \Amazon\ProductAdvertisingAPI\v1\Model\SearchItemsRequest $searchItemsRequest SearchItemsRequest (required)
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SearchItemsRequest $searchItemsRequest SearchItemsRequest (required)
      *
-     * @throws \Amazon\ProductAdvertisingAPI\v1\ApiException on non-2xx response
+     * @throws \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Amazon\ProductAdvertisingAPI\v1\Model\SearchItemsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SearchItemsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function searchItemsWithHttpInfo($searchItemsRequest)
     {
-        $returnType = '\Amazon\ProductAdvertisingAPI\v1\Model\SearchItemsResponse';
+        $returnType = '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SearchItemsResponse';
         $request = $this->searchItemsRequest($searchItemsRequest);
 
         try {
@@ -1040,7 +1040,7 @@ class DefaultApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $responseBody,
-                        '\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
+                        '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1048,7 +1048,7 @@ class DefaultApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $responseBody,
-                        '\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
+                        '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1056,7 +1056,7 @@ class DefaultApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $responseBody,
-                        '\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
+                        '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1064,7 +1064,7 @@ class DefaultApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $responseBody,
-                        '\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
+                        '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1072,7 +1072,7 @@ class DefaultApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $responseBody,
-                        '\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
+                        '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIClientException',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1080,7 +1080,7 @@ class DefaultApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $responseBody,
-                        '\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIServiceException',
+                        '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ProductAdvertisingAPIServiceException',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1095,7 +1095,7 @@ class DefaultApi
      *
      * 
      *
-     * @param  \Amazon\ProductAdvertisingAPI\v1\Model\SearchItemsRequest $searchItemsRequest SearchItemsRequest (required)
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SearchItemsRequest $searchItemsRequest SearchItemsRequest (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1115,14 +1115,14 @@ class DefaultApi
      *
      * 
      *
-     * @param  \Amazon\ProductAdvertisingAPI\v1\Model\SearchItemsRequest $searchItemsRequest SearchItemsRequest (required)
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SearchItemsRequest $searchItemsRequest SearchItemsRequest (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function searchItemsAsyncWithHttpInfo($searchItemsRequest)
     {
-        $returnType = '\Amazon\ProductAdvertisingAPI\v1\Model\SearchItemsResponse';
+        $returnType = '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SearchItemsResponse';
         $request = $this->searchItemsRequest($searchItemsRequest);
 
         return $this->client
@@ -1165,7 +1165,7 @@ class DefaultApi
     /**
      * Create request for operation 'searchItems'
      *
-     * @param  \Amazon\ProductAdvertisingAPI\v1\Model\SearchItemsRequest $searchItemsRequest SearchItemsRequest (required)
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SearchItemsRequest $searchItemsRequest SearchItemsRequest (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

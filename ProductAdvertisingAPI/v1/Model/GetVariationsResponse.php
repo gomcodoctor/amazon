@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * GetVariationsResponse Class Doc Comment
@@ -44,8 +44,8 @@ class GetVariationsResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'errors' => '\Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[]',
-        'variationsResult' => '\Amazon\ProductAdvertisingAPI\v1\Model\VariationsResult'
+        'errors' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[]',
+        'variationsResult' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\VariationsResult'
     ];
 
     /**
@@ -201,7 +201,7 @@ class GetVariationsResponse implements ModelInterface, ArrayAccess
     /**
      * Gets errors
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[]
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[]
      */
     public function getErrors()
     {
@@ -211,7 +211,7 @@ class GetVariationsResponse implements ModelInterface, ArrayAccess
     /**
      * Sets errors
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[] $errors errors
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\ErrorData[] $errors errors
      *
      * @return $this
      */
@@ -225,7 +225,7 @@ class GetVariationsResponse implements ModelInterface, ArrayAccess
     /**
      * Gets variationsResult
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\VariationsResult
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\VariationsResult
      */
     public function getVariationsResult()
     {
@@ -235,7 +235,7 @@ class GetVariationsResponse implements ModelInterface, ArrayAccess
     /**
      * Sets variationsResult
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\VariationsResult $variationsResult variationsResult
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\VariationsResult $variationsResult variationsResult
      *
      * @return $this
      */

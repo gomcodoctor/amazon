@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * TechnicalInfo Class Doc Comment
@@ -44,7 +44,7 @@ class TechnicalInfo implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'formats' => '\Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute'
+        'formats' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute'
     ];
 
     /**
@@ -195,7 +195,7 @@ class TechnicalInfo implements ModelInterface, ArrayAccess
     /**
      * Gets formats
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute
      */
     public function getFormats()
     {
@@ -205,7 +205,7 @@ class TechnicalInfo implements ModelInterface, ArrayAccess
     /**
      * Sets formats
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute $formats formats
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\MultiValuedAttribute $formats formats
      *
      * @return $this
      */

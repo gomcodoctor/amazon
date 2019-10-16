@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * Offers Class Doc Comment
@@ -44,8 +44,8 @@ class Offers implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'listings' => '\Amazon\ProductAdvertisingAPI\v1\Model\OfferListing[]',
-        'summaries' => '\Amazon\ProductAdvertisingAPI\v1\Model\OfferSummary[]'
+        'listings' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferListing[]',
+        'summaries' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferSummary[]'
     ];
 
     /**
@@ -201,7 +201,7 @@ class Offers implements ModelInterface, ArrayAccess
     /**
      * Gets listings
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\OfferListing[]
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferListing[]
      */
     public function getListings()
     {
@@ -211,7 +211,7 @@ class Offers implements ModelInterface, ArrayAccess
     /**
      * Sets listings
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\OfferListing[] $listings listings
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferListing[] $listings listings
      *
      * @return $this
      */
@@ -225,7 +225,7 @@ class Offers implements ModelInterface, ArrayAccess
     /**
      * Gets summaries
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\OfferSummary[]
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferSummary[]
      */
     public function getSummaries()
     {
@@ -235,7 +235,7 @@ class Offers implements ModelInterface, ArrayAccess
     /**
      * Sets summaries
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\OfferSummary[] $summaries summaries
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferSummary[] $summaries summaries
      *
      * @return $this
      */

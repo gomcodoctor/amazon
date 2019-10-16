@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * OfferListing Class Doc Comment
@@ -44,17 +44,17 @@ class OfferListing implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'availability' => '\Amazon\ProductAdvertisingAPI\v1\Model\OfferAvailability',
-        'condition' => '\Amazon\ProductAdvertisingAPI\v1\Model\OfferCondition',
-        'deliveryInfo' => '\Amazon\ProductAdvertisingAPI\v1\Model\OfferDeliveryInfo',
+        'availability' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferAvailability',
+        'condition' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferCondition',
+        'deliveryInfo' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferDeliveryInfo',
         'id' => 'string',
         'isBuyBoxWinner' => 'bool',
-        'loyaltyPoints' => '\Amazon\ProductAdvertisingAPI\v1\Model\OfferLoyaltyPoints',
-        'merchantInfo' => '\Amazon\ProductAdvertisingAPI\v1\Model\OfferMerchantInfo',
-        'price' => '\Amazon\ProductAdvertisingAPI\v1\Model\OfferPrice',
-        'programEligibility' => '\Amazon\ProductAdvertisingAPI\v1\Model\OfferProgramEligibility',
-        'promotions' => '\Amazon\ProductAdvertisingAPI\v1\Model\OfferPromotion[]',
-        'savingBasis' => '\Amazon\ProductAdvertisingAPI\v1\Model\OfferPrice',
+        'loyaltyPoints' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferLoyaltyPoints',
+        'merchantInfo' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferMerchantInfo',
+        'price' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferPrice',
+        'programEligibility' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferProgramEligibility',
+        'promotions' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferPromotion[]',
+        'savingBasis' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferPrice',
         'violatesMAP' => 'bool'
     ];
 
@@ -261,7 +261,7 @@ class OfferListing implements ModelInterface, ArrayAccess
     /**
      * Gets availability
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\OfferAvailability
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferAvailability
      */
     public function getAvailability()
     {
@@ -271,7 +271,7 @@ class OfferListing implements ModelInterface, ArrayAccess
     /**
      * Sets availability
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\OfferAvailability $availability availability
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferAvailability $availability availability
      *
      * @return $this
      */
@@ -285,7 +285,7 @@ class OfferListing implements ModelInterface, ArrayAccess
     /**
      * Gets condition
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\OfferCondition
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferCondition
      */
     public function getCondition()
     {
@@ -295,7 +295,7 @@ class OfferListing implements ModelInterface, ArrayAccess
     /**
      * Sets condition
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\OfferCondition $condition condition
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferCondition $condition condition
      *
      * @return $this
      */
@@ -309,7 +309,7 @@ class OfferListing implements ModelInterface, ArrayAccess
     /**
      * Gets deliveryInfo
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\OfferDeliveryInfo
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferDeliveryInfo
      */
     public function getDeliveryInfo()
     {
@@ -319,7 +319,7 @@ class OfferListing implements ModelInterface, ArrayAccess
     /**
      * Sets deliveryInfo
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\OfferDeliveryInfo $deliveryInfo deliveryInfo
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferDeliveryInfo $deliveryInfo deliveryInfo
      *
      * @return $this
      */
@@ -381,7 +381,7 @@ class OfferListing implements ModelInterface, ArrayAccess
     /**
      * Gets loyaltyPoints
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\OfferLoyaltyPoints
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferLoyaltyPoints
      */
     public function getLoyaltyPoints()
     {
@@ -391,7 +391,7 @@ class OfferListing implements ModelInterface, ArrayAccess
     /**
      * Sets loyaltyPoints
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\OfferLoyaltyPoints $loyaltyPoints loyaltyPoints
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferLoyaltyPoints $loyaltyPoints loyaltyPoints
      *
      * @return $this
      */
@@ -405,7 +405,7 @@ class OfferListing implements ModelInterface, ArrayAccess
     /**
      * Gets merchantInfo
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\OfferMerchantInfo
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferMerchantInfo
      */
     public function getMerchantInfo()
     {
@@ -415,7 +415,7 @@ class OfferListing implements ModelInterface, ArrayAccess
     /**
      * Sets merchantInfo
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\OfferMerchantInfo $merchantInfo merchantInfo
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferMerchantInfo $merchantInfo merchantInfo
      *
      * @return $this
      */
@@ -429,7 +429,7 @@ class OfferListing implements ModelInterface, ArrayAccess
     /**
      * Gets price
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\OfferPrice
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferPrice
      */
     public function getPrice()
     {
@@ -439,7 +439,7 @@ class OfferListing implements ModelInterface, ArrayAccess
     /**
      * Sets price
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\OfferPrice $price price
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferPrice $price price
      *
      * @return $this
      */
@@ -453,7 +453,7 @@ class OfferListing implements ModelInterface, ArrayAccess
     /**
      * Gets programEligibility
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\OfferProgramEligibility
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferProgramEligibility
      */
     public function getProgramEligibility()
     {
@@ -463,7 +463,7 @@ class OfferListing implements ModelInterface, ArrayAccess
     /**
      * Sets programEligibility
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\OfferProgramEligibility $programEligibility programEligibility
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferProgramEligibility $programEligibility programEligibility
      *
      * @return $this
      */
@@ -477,7 +477,7 @@ class OfferListing implements ModelInterface, ArrayAccess
     /**
      * Gets promotions
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\OfferPromotion[]
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferPromotion[]
      */
     public function getPromotions()
     {
@@ -487,7 +487,7 @@ class OfferListing implements ModelInterface, ArrayAccess
     /**
      * Sets promotions
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\OfferPromotion[] $promotions promotions
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferPromotion[] $promotions promotions
      *
      * @return $this
      */
@@ -501,7 +501,7 @@ class OfferListing implements ModelInterface, ArrayAccess
     /**
      * Gets savingBasis
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\OfferPrice
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferPrice
      */
     public function getSavingBasis()
     {
@@ -511,7 +511,7 @@ class OfferListing implements ModelInterface, ArrayAccess
     /**
      * Sets savingBasis
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\OfferPrice $savingBasis savingBasis
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferPrice $savingBasis savingBasis
      *
      * @return $this
      */

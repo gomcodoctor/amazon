@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * SearchItemsRequest Class Doc Comment
@@ -47,26 +47,26 @@ class SearchItemsRequest implements ModelInterface, ArrayAccess
         'actor' => 'string',
         'artist' => 'string',
         'author' => 'string',
-        'availability' => '\Amazon\ProductAdvertisingAPI\v1\Model\Availability',
+        'availability' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Availability',
         'brand' => 'string',
         'browseNodeId' => 'string',
-        'condition' => '\Amazon\ProductAdvertisingAPI\v1\Model\Condition',
-        'deliveryFlags' => '\Amazon\ProductAdvertisingAPI\v1\Model\DeliveryFlag[]',
+        'condition' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Condition',
+        'deliveryFlags' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\DeliveryFlag[]',
         'itemCount' => 'int',
         'keywords' => 'string',
         'languagesOfPreference' => 'string[]',
         'marketplace' => 'string',
-        'maxPrice' => '\Amazon\ProductAdvertisingAPI\v1\Model\MaxPrice',
-        'merchant' => '\Amazon\ProductAdvertisingAPI\v1\Model\Merchant',
-        'minPrice' => '\Amazon\ProductAdvertisingAPI\v1\Model\MinPrice',
-        'minReviewsRating' => '\Amazon\ProductAdvertisingAPI\v1\Model\MinReviewsRating',
-        'minSavingPercent' => '\Amazon\ProductAdvertisingAPI\v1\Model\MinSavingPercent',
-        'offerCount' => '\Amazon\ProductAdvertisingAPI\v1\Model\OfferCount',
+        'maxPrice' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\MaxPrice',
+        'merchant' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Merchant',
+        'minPrice' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\MinPrice',
+        'minReviewsRating' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\MinReviewsRating',
+        'minSavingPercent' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\MinSavingPercent',
+        'offerCount' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferCount',
         'partnerTag' => 'string',
-        'partnerType' => '\Amazon\ProductAdvertisingAPI\v1\Model\PartnerType',
-        'resources' => '\Amazon\ProductAdvertisingAPI\v1\Model\SearchItemsResource[]',
+        'partnerType' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\PartnerType',
+        'resources' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SearchItemsResource[]',
         'searchIndex' => 'string',
-        'sortBy' => '\Amazon\ProductAdvertisingAPI\v1\Model\SortBy',
+        'sortBy' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SortBy',
         'suppressAdultProducts' => 'bool',
         'title' => 'string'
     ];
@@ -423,7 +423,7 @@ class SearchItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets availability
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\Availability
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Availability
      */
     public function getAvailability()
     {
@@ -433,7 +433,7 @@ class SearchItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets availability
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\Availability $availability availability
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Availability $availability availability
      *
      * @return $this
      */
@@ -495,7 +495,7 @@ class SearchItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets condition
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\Condition
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Condition
      */
     public function getCondition()
     {
@@ -505,7 +505,7 @@ class SearchItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets condition
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\Condition $condition condition
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Condition $condition condition
      *
      * @return $this
      */
@@ -519,7 +519,7 @@ class SearchItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets deliveryFlags
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\DeliveryFlag[]
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\DeliveryFlag[]
      */
     public function getDeliveryFlags()
     {
@@ -529,7 +529,7 @@ class SearchItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets deliveryFlags
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\DeliveryFlag[] $deliveryFlags deliveryFlags
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\DeliveryFlag[] $deliveryFlags deliveryFlags
      *
      * @return $this
      */
@@ -639,7 +639,7 @@ class SearchItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets maxPrice
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\MaxPrice
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\MaxPrice
      */
     public function getMaxPrice()
     {
@@ -649,7 +649,7 @@ class SearchItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets maxPrice
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\MaxPrice $maxPrice maxPrice
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\MaxPrice $maxPrice maxPrice
      *
      * @return $this
      */
@@ -663,7 +663,7 @@ class SearchItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets merchant
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\Merchant
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Merchant
      */
     public function getMerchant()
     {
@@ -673,7 +673,7 @@ class SearchItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets merchant
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\Merchant $merchant merchant
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\Merchant $merchant merchant
      *
      * @return $this
      */
@@ -687,7 +687,7 @@ class SearchItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets minPrice
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\MinPrice
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\MinPrice
      */
     public function getMinPrice()
     {
@@ -697,7 +697,7 @@ class SearchItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets minPrice
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\MinPrice $minPrice minPrice
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\MinPrice $minPrice minPrice
      *
      * @return $this
      */
@@ -711,7 +711,7 @@ class SearchItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets minReviewsRating
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\MinReviewsRating
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\MinReviewsRating
      */
     public function getMinReviewsRating()
     {
@@ -721,7 +721,7 @@ class SearchItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets minReviewsRating
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\MinReviewsRating $minReviewsRating minReviewsRating
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\MinReviewsRating $minReviewsRating minReviewsRating
      *
      * @return $this
      */
@@ -735,7 +735,7 @@ class SearchItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets minSavingPercent
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\MinSavingPercent
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\MinSavingPercent
      */
     public function getMinSavingPercent()
     {
@@ -745,7 +745,7 @@ class SearchItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets minSavingPercent
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\MinSavingPercent $minSavingPercent minSavingPercent
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\MinSavingPercent $minSavingPercent minSavingPercent
      *
      * @return $this
      */
@@ -759,7 +759,7 @@ class SearchItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets offerCount
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\OfferCount
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferCount
      */
     public function getOfferCount()
     {
@@ -769,7 +769,7 @@ class SearchItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets offerCount
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\OfferCount $offerCount offerCount
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferCount $offerCount offerCount
      *
      * @return $this
      */
@@ -807,7 +807,7 @@ class SearchItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets partnerType
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\PartnerType
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\PartnerType
      */
     public function getPartnerType()
     {
@@ -817,7 +817,7 @@ class SearchItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets partnerType
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\PartnerType $partnerType partnerType
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\PartnerType $partnerType partnerType
      *
      * @return $this
      */
@@ -831,7 +831,7 @@ class SearchItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets resources
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\SearchItemsResource[]
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SearchItemsResource[]
      */
     public function getResources()
     {
@@ -841,7 +841,7 @@ class SearchItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets resources
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\SearchItemsResource[] $resources resources
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SearchItemsResource[] $resources resources
      *
      * @return $this
      */
@@ -879,7 +879,7 @@ class SearchItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets sortBy
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\SortBy
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SortBy
      */
     public function getSortBy()
     {
@@ -889,7 +889,7 @@ class SearchItemsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets sortBy
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\SortBy $sortBy sortBy
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\SortBy $sortBy sortBy
      *
      * @return $this
      */

@@ -18,7 +18,7 @@
 namespace Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model;
 
 use \ArrayAccess;
-use \Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
+use Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\ObjectSerializer;
 
 /**
  * OfferDeliveryInfo Class Doc Comment
@@ -47,7 +47,7 @@ class OfferDeliveryInfo implements ModelInterface, ArrayAccess
         'isAmazonFulfilled' => 'bool',
         'isFreeShippingEligible' => 'bool',
         'isPrimeEligible' => 'bool',
-        'shippingCharges' => '\Amazon\ProductAdvertisingAPI\v1\Model\OfferShippingCharge[]'
+        'shippingCharges' => '\Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferShippingCharge[]'
     ];
 
     /**
@@ -285,7 +285,7 @@ class OfferDeliveryInfo implements ModelInterface, ArrayAccess
     /**
      * Gets shippingCharges
      *
-     * @return \Amazon\ProductAdvertisingAPI\v1\Model\OfferShippingCharge[]
+     * @return \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferShippingCharge[]
      */
     public function getShippingCharges()
     {
@@ -295,7 +295,7 @@ class OfferDeliveryInfo implements ModelInterface, ArrayAccess
     /**
      * Sets shippingCharges
      *
-     * @param \Amazon\ProductAdvertisingAPI\v1\Model\OfferShippingCharge[] $shippingCharges shippingCharges
+     * @param \Gomcodoctor\Amazon\ProductAdvertisingAPI\v1\Model\OfferShippingCharge[] $shippingCharges shippingCharges
      *
      * @return $this
      */
