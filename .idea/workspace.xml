@@ -1,19 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48077de2-5346-458d-8acc-877da204a656" name="Default" comment="" />
-    <option name="TRACKING_ENABLED" value="true" />
+    <list default="true" id="48077de2-5346-458d-8acc-877da204a656" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/amazon.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="990" />
+  </component>
+  <component name="ProjectId" id="1e531eiKIw3rW9U3UT7VVC3MXsr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ProductAdvertisingAPI" />
     <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\xampp\htdocs\mws\amazon\ProductAdvertisingAPI" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\Smart\AppData\Roaming\Subversion</configuration>
@@ -24,14 +48,50 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1507875165028</updated>
+      <workItem from="1571202812032" duration="416000" />
+      <workItem from="1593597413618" duration="306000" />
     </task>
+    <task id="LOCAL-00001" summary="namespace updated">
+      <created>1571203166372</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1571203166372</updated>
+    </task>
+    <task id="LOCAL-00002" summary="MWS Financial API added">
+      <created>1593597625604</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593597625604</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="namespace updated" />
+    <MESSAGE value="MWS Financial API added" />
+    <option name="LAST_COMMIT_MESSAGE" value="MWS Financial API added" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="395" y="0" key="CommitChangelistDialog2" timestamp="1593597623528">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="395" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1593597623528" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1593597639047">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1593597639047" />
+    <state x="477" y="116" width="581" height="592" key="find.popup" timestamp="1593597513092">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="477" y="116" width="581" height="592" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1593597513092" />
+    <state x="569" y="313" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1593597652454">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="569" y="313" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.824@0.0.1536.824" timestamp="1593597652454" />
   </component>
 </project>
